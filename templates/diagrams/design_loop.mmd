@@ -1,0 +1,9 @@
+graph LR
+    A["PIE-NN Source Corpus"] --> B["compile<br/>Forward Pass"]
+    B --> C["AST Output"]
+    C --> D["krei- Criterion<br/>Evaluate Design"]
+    D --> E["Design Loss"]
+    E --> F["redesign<br/>Backward Pass"]
+    F --> G["Language Gradient"]
+    G --> H["Update Language Spec"]
+    H --> A

@@ -1,0 +1,107 @@
+name: RegimA Organizational Learning Cycle AI Response Generator
+
+on:
+  push:
+    branches: [ main ]
+    paths: 
+      - 'regcyc.json'
+      - 'cycleCompletion.json'
+  
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'regcyc.json'
+      - 'cycleCompletion.json'
+  
+  schedule:
+    - cron: '0 9 * * 1'
+  
+  workflow_dispatch:
+    inputs:
+      analysis_type:
+        description: 'Type of analysis to perform'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+        - full
+        - zone_concept_only
+        - consciousness_only
+        - guidance_only
+
+jobs:
+  generate-ai-responses:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install openai anthropic google-generativeai requests python-dotenv
+        
+    - name: Generate AI Responses
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
+        ANALYSIS_TYPE: ${{ github.event.inputs.analysis_type || 'full' }}
+      run: |
+        python scripts/regima_ai_processor.py
+        
+    - name: Upload AI Response Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: regima-ai-responses
+        path: |
+          outputs/
+          *.md
+        retention-days: 30
+        
+    - name: Create Issue with AI Insights
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          let insightsContent = 'AI insights generation completed. Check artifacts for detailed outputs.';
+          try {
+            insightsContent = fs.readFileSync('outputs/ai_insights_summary.md', 'utf8');
+          } catch (error) {
+            console.log('Could not read insights file, using default message');
+          }
+          
+          const issueBody = [
+            '# RegimA Organizational Learning Cycle AI Analysis',
+            '',
+            '## Generated Insights',
+            '',
+            insightsContent,
+            '',
+            '## Context',
+            'This analysis was automatically generated based on the organizational consciousness data and Zone Concept framework in the repository.',
+            '',
+            `**Trigger:** ${context.eventName}`,
+            `**Branch:** ${context.ref}`,
+            `**Commit:** ${context.sha}`,
+            '',
+            `Check the [workflow artifacts](${context.payload.repository.html_url}/actions/runs/${context.runId}) for detailed outputs.`
+          ].join('\n');
+          
+          const issue = await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `RegimA Learning Cycle AI Analysis - ${new Date().toISOString().split('T')[0]}`,
+            body: issueBody,
+            labels: ['ai-analysis', 'learning-cycle', 'regima-org']
+          });
+          
+          console.log(`Created issue #${issue.data.number}: ${issue.data.title}`);

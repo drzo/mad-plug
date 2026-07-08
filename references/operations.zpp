@@ -1,0 +1,48 @@
+```z++
+// Z++ Formal Specification for PIE-NN System Operations
+
+// Import system state schema
+include "system_state.zpp"
+
+// Operation to process a PIE-NN source string
+schema ProcessSource
+  ΔPIENNDaemonState
+  source?: RawData
+  response!: seq ℤ
+
+  pre
+    is_running = true
+  end
+
+  post
+    // The cognitive core processes the source, potentially updating its internal state
+    // and the current_ast is updated with the new program.
+    // A response is generated.
+    cognitive_core' = cognitive_core
+    current_ast' ≠ current_ast
+    response! ≠ <> 
+  end
+end
+
+// Operation to get the daemon's status (read-only)
+schema GetStatus
+  ΞPIENNDaemonState
+  response!: seq ℤ
+
+  post
+    // The response contains the current status and cognitive core type
+    response! = "{\"status\": \"running\", \"cognitive_core\": \"neuro-nn\"}"
+  end
+end
+
+// Operation to get the time crystal hierarchy (read-only)
+schema GetTCHierarchy
+  ΞPIENNDaemonState
+  response!: seq ℤ
+
+  post
+    // The response contains the JSON representation of the time crystal hierarchy
+    response! = json(time_crystals.levels)
+  end
+end
+```

@@ -1,0 +1,79 @@
+```z++
+// Z++ Formal Specification for PIE-NN External Integration Contracts
+
+include "system_state.zpp"
+
+// ─── LLM Sidecar Integration ───
+
+// Schema for a valid IDL command received from the LLM sidecar
+schema IDLCommand
+  method: seq ℤ
+  params: seq ℤ ↦ seq ℤ
+
+  invariant
+    method ∈ { "get_status", "get_tc_hierarchy", "process_source", "update_trait" }
+  end
+end
+
+// Schema for a valid IDL response sent to the LLM sidecar
+schema IDLResponse
+  success: 𝔹
+  data: seq ℤ ↦ seq ℤ
+  error: seq ℤ
+
+  invariant
+    success = true ⇒ error = <>
+    success = false ⇒ data = ∅
+  end
+end
+
+// The integration contract for the UNIX socket boundary
+schema SocketBoundaryContract
+  ΞPIENNDaemonState
+  command?: IDLCommand
+  response!: IDLResponse
+
+  pre
+    is_running = true
+    command? ≠ ∅
+  end
+
+  post
+    // Every valid command produces a response
+    response! ≠ ∅
+    // If the command method is valid, the response is successful
+    command?.method ∈ dom allowed_methods ⇒ response!.success = true
+  end
+end
+
+// ─── Time Crystal Oscillator Integration ───
+
+// Schema for a single oscillator level
+schema OscillatorLevel
+  level_id: ℤ
+  name: seq ℤ
+  period_us: ℤ
+
+  invariant
+    0 ≤ level_id ≤ 11
+    period_us > 0
+  end
+end
+
+// The contract for scheduling a cognitive operation on a TC level
+schema ScheduleOnTC
+  ΔPIENNDaemonState
+  operation?: seq ℤ
+  target_level?: ℤ
+
+  pre
+    is_running = true
+    target_level? ∈ dom time_crystals.levels
+  end
+
+  post
+    // The operation is scheduled and the daemon state reflects the pending task
+    is_running' = true
+  end
+end
+```

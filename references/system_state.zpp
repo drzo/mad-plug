@@ -1,0 +1,42 @@
+```z++
+// Z++ Formal Specification for the PIE-NN System State
+
+// Import the data model schemas
+include "data_model.zpp"
+
+// Schema for the neuro-nn cognitive core state
+schema NeuroNNCoreState
+  playfulness: ℤ
+  intelligence: ℤ
+  chaotic: ℤ
+  empathy: ℤ
+  sarcasm: ℤ
+  self_image: seq ℤ
+
+  invariant
+    // Personality traits are percentages
+    0 ≤ playfulness ≤ 100
+    0 ≤ intelligence ≤ 100
+    0 ≤ chaotic ≤ 100
+    0 ≤ empathy ≤ 100
+    0 ≤ sarcasm ≤ 100
+  end
+end
+
+// Schema for the Time Crystal Hierarchy
+schema TimeCrystalHierarchy
+  levels: ℤ ↦ seq ℤ
+
+  invariant
+    dom levels = 0..11
+  end
+end
+
+// Top-level schema for the entire daemon state
+schema PIENNDaemonState
+  cognitive_core: NeuroNNCoreState
+  time_crystals: TimeCrystalHierarchy
+  current_ast: ASTNode
+  is_running: 𝔹
+end
+```

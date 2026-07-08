@@ -1,0 +1,15 @@
+graph TD
+    subgraph "Cognitive Core - neuro-nn"
+        Input["IDL Command"] --> PM["Personality Modulation"]
+        PM --> F1["PlayFrame<br/>weight: playfulness"]
+        PM --> F2["StrategyFrame<br/>weight: intelligence"]
+        PM --> F3["ChaosFrame<br/>weight: chaotic"]
+        PM --> F4["SocialFrame<br/>weight: empathy"]
+        F1 --> Integration["Frame Integration<br/>by Relevance Realization"]
+        F2 --> Integration
+        F3 --> Integration
+        F4 --> Integration
+        Integration --> Response["Response Generation"]
+        Response --> Autognosis["Autognosis<br/>Self-Awareness Pass"]
+        Autognosis --> PM
+    end

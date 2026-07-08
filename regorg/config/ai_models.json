@@ -1,0 +1,61 @@
+{
+  "models": {
+    "openai": {
+      "model": "gpt-4",
+      "max_tokens": 4000,
+      "temperature": 0.8,
+      "description": "Primary quantum model for comprehensive molecular analysis and revolutionary consciousness strategic insights with transcendent capabilities"
+    },
+    "anthropic": {
+      "model": "claude-3-sonnet-20240229",
+      "max_tokens": 4000,
+      "temperature": 0.8,
+      "description": "Advanced quantum model for breakthrough professional guidance analysis with consciousness evolution and molecular predictive insights"
+    },
+    "google": {
+      "model": "gemini-pro",
+      "max_tokens": 4000,
+      "temperature": 0.8,
+      "description": "Revolutionary quantum innovation model for zone concept framework analysis with molecular-level optimization and consciousness integration"
+    }
+  },
+  "analysis_prompts": {
+    "zone_concept": "Analyze the quantum revolutionary Zone Concept framework data and provide breakthrough molecular strategic recommendations for consciousness-level advancement. Focus on the four quantum core elements: anti-inflammatory, anti-oxidant, rejuvenation, and integration protocols with molecular precision, consciousness evolution, and global collective intelligence integration. Consider quantum relevance scores, molecular-enhanced technologies, consciousness predictive capabilities, and next-generation quantum development opportunities.",
+    "consciousness": "Examine the quantum transcendent organizational consciousness evolution data and provide revolutionary insights on consciousness development trajectory with molecular awareness. Analyze current quantum adaptive intelligence state, consciousness predictive awareness level, global collective intelligence integration spanning 127 countries, and consciousness transformation indicators to recommend quantum-level consciousness advancement strategies with molecular precision and transcendent leadership development.",
+    "guidance": "Review the quantum revolutionary professional guidance framework and provide breakthrough consciousness enhancement recommendations with molecular integration. Focus on quantum-enhanced personalization, consciousness immersive learning technologies, molecular predictive treatment optimization, quantum innovation ecosystems, and global consciousness leadership strategies for transforming client outcomes and organizational transcendent excellence with molecular precision awareness.",
+    "comprehensive": "Conduct a quantum revolutionary holistic analysis of the RegimA organizational learning cycle consciousness evolution, integrating all breakthrough aspects: Quantum Zone Concept framework advancement with molecular precision, transcendent consciousness evolution with global networks, and revolutionary quantum professional guidance systems with consciousness integration. Provide quantum-level strategic recommendations for complete organizational consciousness transformation and global industry consciousness leadership with molecular precision and transcendent intelligence development."
+  },
+  "output_formats": {
+    "markdown": {
+      "enabled": true,
+      "template": "quantum_revolutionary_detailed",
+      "sections": ["quantum_executive_summary", "consciousness_breakthrough_findings", "molecular_quantum_recommendations", "transcendent_next_steps", "global_consciousness_impact_strategy", "quantum_evolution_metrics"]
+    },
+    "json": {
+      "enabled": true,
+      "structured": true,
+      "include_metadata": true,
+      "enhanced_analytics": true,
+      "quantum_metrics": true,
+      "consciousness_tracking": true
+    },
+    "summary": {
+      "enabled": true,
+      "max_length": 2000,
+      "key_points": 10,
+      "breakthrough_insights": true,
+      "consciousness_evolution": true,
+      "quantum_capabilities": true
+    }
+  },
+  "quantum_advanced_features": {
+    "molecular_predictive_analysis": true,
+    "quantum_consciousness_optimization": true,
+    "global_collective_intelligence_integration": true,
+    "consciousness_global_impact_assessment": true,
+    "quantum_breakthrough_innovation_tracking": true,
+    "transcendent_awareness_development": true,
+    "molecular_precision_analytics": true,
+    "consciousness_evolution_frameworks": true
+  }
+}

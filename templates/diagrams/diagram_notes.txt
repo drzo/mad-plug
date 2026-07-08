@@ -1,0 +1,4 @@
+All three diagrams rendered successfully:
+1. system_architecture.png - Shows User -> LLM Sidecar -> Time Crystal Daemon flow with feedback loop
+2. cognitive_core.png - Shows neuro-nn multi-frame processing with Autognosis feedback loop
+3. design_loop.png - Shows the differentiable language design cycle from corpus through criterion to gradient update

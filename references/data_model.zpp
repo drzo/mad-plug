@@ -1,0 +1,48 @@
+```z++
+// Z++ Formal Specification for the PIE-NN Data Layer
+
+// Base Types
+// PIE roots are represented as free types
+freetypedecl PIE_Root ::= gno_ | ser_ | skei_ | sem_ | krei_ | meit_ | dher_ | deik_ | werg_ | stā_ | kʷo_
+
+// A language construct, grounded in the *gno- (to know) root
+schema GnoConstruct
+  name: seq ℤ
+  spec: seq ℤ
+  pie_root: PIE_Root
+  invariant
+    pie_root = gno_
+  end
+end
+
+// A pipeline of constructs, from *ser- (to line up)
+schema SerPipeline
+  constructs: seq GnoConstruct
+  pie_root: PIE_Root
+  invariant
+    pie_root = ser_
+  end
+end
+
+// An Abstract Syntax Tree Node
+schema ASTNode
+  construct: GnoConstruct
+  children: seq ASTNode
+end
+
+// Raw source code data
+schema RawData
+  content: seq ℤ
+end
+
+// A structured percept, the result of parsing
+schema Percept
+  ast: ASTNode
+end
+
+// An action to be taken by the agent
+schema Action
+  operation: seq ℤ
+  target: seq ℤ
+end
+```

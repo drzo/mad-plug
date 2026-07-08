@@ -1,0 +1,21 @@
+graph LR
+    subgraph "User Interaction Layer"
+        U[User / Developer]
+    end
+
+    subgraph "LLM Interface Sidecar"
+        NL[Natural Language Input] --> Compiler[Intent Compiler]
+        Compiler --> IDL[Typed IDL Command]
+    end
+
+    subgraph "PIE-NN Time Crystal Daemon"
+        IDL --> Handler[Command Handler]
+        Handler --> Core["Cognitive Core (neuro-nn)"]
+        Core --> Processor[PIE-NN Language Processor]
+        Processor --> TC["Time Crystal Hierarchy (12 Levels)"]
+        TC --> Core
+    end
+
+    U --> NL
+    Handler -- "JSON Response" --> Narrator[Response Narrator]
+    Narrator --> U
