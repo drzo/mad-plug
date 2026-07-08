@@ -7,7 +7,38 @@
   "repository": "https://github.com/drzo/mad-plug",
   "license": "MIT",
   "entrypoint": "SKILL.md",
-  "plugins": [],
+  "plugins": [
+    {
+      "name": "pattern-navigator",
+      "path": "plugins/pattern-navigator/plugin.md",
+      "description": "Navigate and query the GH253 pattern topology — 253 patterns mapped to GitHub/software domains with relationship traversal and domain mapping."
+    },
+    {
+      "name": "skill-composer",
+      "path": "plugins/skill-composer/plugin.md",
+      "description": "Decompose, transform, and compose skills across domains using structural analogy and the General Relevance Transform."
+    },
+    {
+      "name": "template-generator",
+      "path": "plugins/template-generator/plugin.md",
+      "description": "Scaffold new projects, skills, extensions, and devcontainers from curated templates covering Lua/nn, Plan 9, WASM, and more."
+    },
+    {
+      "name": "dsl-factory",
+      "path": "plugins/language-creator/plugin.md",
+      "description": "Design and create domain-specific languages with grammar definitions, parsers, lexicon extraction, and validation."
+    },
+    {
+      "name": "cognitive-kernel",
+      "path": "plugins/cognitive-kernel/plugin.md",
+      "description": "Build and operate cognitive development kernels — Plan 9, Inferno-OS, and OpenCog-based distributed inference systems."
+    },
+    {
+      "name": "formulation-analyzer",
+      "path": "plugins/formulation-analyzer/plugin.md",
+      "description": "Analyze and optimize formulations — skincare compounds, neural network topologies, brain models, and mathematical constructs."
+    }
+  ],
   "skills": [
     {
       "name": "gauge-hypergraph-network",
