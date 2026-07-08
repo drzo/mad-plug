@@ -2,10 +2,12 @@
   "name": "mad-plug",
   "version": "1.0.0",
   "description": "COG253 Unified Skill Lattice — 53 cognitive capabilities mapped to Christopher Alexander's 253-pattern topology for navigating, discovering, and composing skills across ecosystem/component/implementation hierarchies.",
+  "owner": "drzo",
   "publisher": "drzo",
   "repository": "https://github.com/drzo/mad-plug",
   "license": "MIT",
   "entrypoint": "SKILL.md",
+  "plugins": [],
   "skills": [
     {
       "name": "gauge-hypergraph-network",
