@@ -1,0 +1,5 @@
+name: example-skill
+description: An example skill demonstrating the plugin repository structure.
+instructions: |
+    This skill is a template. Replace this with the actual steps or instructions
+    that define what this skill does when invoked by the Copilot coding agent.
