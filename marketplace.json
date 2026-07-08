@@ -14,56 +14,38 @@
   "plugins": [
     {
       "name": "pattern-navigator",
-      "path": "plugins/pattern-navigator/plugin.md",
-      "source": {
-        "source": "github",
-        "repo": "drzo/mad-plug"
-      },
+      "path": "plugins/pattern-navigator",
+      "source": "github:drzo/mad-plug",
       "description": "Navigate and query the GH253 pattern topology — 253 patterns mapped to GitHub/software domains with relationship traversal and domain mapping."
     },
     {
       "name": "skill-composer",
-      "path": "plugins/skill-composer/plugin.md",
-      "source": {
-        "source": "github",
-        "repo": "drzo/mad-plug"
-      },
+      "path": "plugins/skill-composer",
+      "source": "github:drzo/mad-plug",
       "description": "Decompose, transform, and compose skills across domains using structural analogy and the General Relevance Transform."
     },
     {
       "name": "template-generator",
-      "path": "plugins/template-generator/plugin.md",
-      "source": {
-        "source": "github",
-        "repo": "drzo/mad-plug"
-      },
+      "path": "plugins/template-generator",
+      "source": "github:drzo/mad-plug",
       "description": "Scaffold new projects, skills, extensions, and devcontainers from curated templates covering Lua/nn, Plan 9, WASM, and more."
     },
     {
       "name": "dsl-factory",
-      "path": "plugins/language-creator/plugin.md",
-      "source": {
-        "source": "github",
-        "repo": "drzo/mad-plug"
-      },
+      "path": "plugins/language-creator",
+      "source": "github:drzo/mad-plug",
       "description": "Design and create domain-specific languages with grammar definitions, parsers, lexicon extraction, and validation."
     },
     {
       "name": "cognitive-kernel",
-      "path": "plugins/cognitive-kernel/plugin.md",
-      "source": {
-        "source": "github",
-        "repo": "drzo/mad-plug"
-      },
+      "path": "plugins/cognitive-kernel",
+      "source": "github:drzo/mad-plug",
       "description": "Build and operate cognitive development kernels — Plan 9, Inferno-OS, and OpenCog-based distributed inference systems."
     },
     {
       "name": "formulation-analyzer",
-      "path": "plugins/formulation-analyzer/plugin.md",
-      "source": {
-        "source": "github",
-        "repo": "drzo/mad-plug"
-      },
+      "path": "plugins/formulation-analyzer",
+      "source": "github:drzo/mad-plug",
       "description": "Analyze and optimize formulations — skincare compounds, neural network topologies, brain models, and mathematical constructs."
     }
   ],
