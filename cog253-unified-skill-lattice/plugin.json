@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "description": "Unified skill definition organized by Christopher Alexander's 253-pattern topology",
+  "name": "cog253-unified-skill-lattice",
+  "skills": "./skills/"
+}
