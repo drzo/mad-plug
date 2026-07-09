@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "description": "RAG Knowledge Auto-Training System",
+  "name": "cragbase",
+  "skills": "./skills/"
+}

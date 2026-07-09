@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "description": "AI VTuber persona with cognitive architecture",
+  "name": "neuro",
+  "skills": "./skills/"
+}

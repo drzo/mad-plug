@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "description": "Deep Tree Echo Core Self Integration",
+  "name": "deep-tree-echo-core-self",
+  "skills": "./skills/"
+}
