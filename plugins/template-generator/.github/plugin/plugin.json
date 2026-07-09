@@ -1,0 +1,19 @@
+{
+  "name": "template-generator",
+  "description": "Scaffold new projects, skills, extensions, and devcontainers from curated templates covering Lua/nn, Plan 9, WASM, and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "drzo",
+    "url": "https://github.com/drzo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "scaffold",
+    "templates",
+    "devcontainer",
+    "skills",
+    "extensions"
+  ],
+  "extensions": ".",
+  "skills": "skills/"
+}

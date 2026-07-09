@@ -1,0 +1,19 @@
+{
+  "name": "skill-composer",
+  "description": "Decompose, transform, and compose skills across domains using structural analogy and the General Relevance Transform.",
+  "version": "1.0.0",
+  "author": {
+    "name": "drzo",
+    "url": "https://github.com/drzo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "grt",
+    "transform",
+    "decompose",
+    "compose"
+  ],
+  "extensions": ".",
+  "skills": "skills/"
+}

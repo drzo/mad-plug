@@ -1,0 +1,18 @@
+{
+  "name": "formulation-analyzer",
+  "description": "Analyze and optimize formulations — skincare compounds, neural network topologies, brain models, and mathematical constructs.",
+  "version": "1.0.0",
+  "author": {
+    "name": "drzo",
+    "url": "https://github.com/drzo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "formulation",
+    "skincare",
+    "neural-topology",
+    "brain-model"
+  ],
+  "extensions": ".",
+  "skills": "skills/"
+}
