@@ -1,0 +1,19 @@
+{
+  "name": "pattern-navigator",
+  "description": "Navigate and query the GH253 pattern topology — 253 patterns mapped to GitHub/software domains with relationship traversal and domain mapping.",
+  "version": "1.0.0",
+  "author": {
+    "name": "drzo",
+    "url": "https://github.com/drzo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "patterns",
+    "apl253",
+    "gh253",
+    "topology",
+    "architecture"
+  ],
+  "extensions": ".",
+  "skills": "skills/"
+}

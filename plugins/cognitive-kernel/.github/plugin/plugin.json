@@ -1,0 +1,19 @@
+{
+  "name": "cognitive-kernel",
+  "description": "Build and operate cognitive development kernels — Plan 9, Inferno-OS, and OpenCog-based distributed inference systems.",
+  "version": "1.0.0",
+  "author": {
+    "name": "drzo",
+    "url": "https://github.com/drzo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "plan9",
+    "inferno",
+    "opencog",
+    "distributed-inference",
+    "kernel"
+  ],
+  "extensions": ".",
+  "skills": "skills/"
+}

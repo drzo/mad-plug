@@ -1,0 +1,19 @@
+{
+  "name": "dsl-factory",
+  "description": "Design and create domain-specific languages with grammar definitions, parsers, lexicon extraction, and validation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "drzo",
+    "url": "https://github.com/drzo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsl",
+    "grammar",
+    "parser",
+    "lexicon",
+    "language-design"
+  ],
+  "extensions": ".",
+  "skills": "skills/"
+}
