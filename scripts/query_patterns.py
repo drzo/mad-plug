@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-APL253 Pattern Query Tool
+gh253 Pattern Query Tool
 Usage: python query_patterns.py <command> [args]
 
 Commands:
@@ -14,25 +14,27 @@ Commands:
 """
 
 import sys
-import os
 import re
 from pathlib import Path
 from collections import deque
 
-BASE = Path("/home/ubuntu/skills/apl253/patterns/apl0/dim0")
+# Patterns live at <repo-root>/patterns/cat{1,2,3}-{enterprises,organisations,repositories}/
+# as gh<NNN>-<slug>.md files, with per-pattern gh<NNN>/broader.md and
+# gh<NNN>/narrower.md relationship files alongside them.
+BASE = Path(__file__).resolve().parent.parent / "patterns"
+CATEGORIES = ["cat1-enterprises", "cat2-organisations", "cat3-repositories"]
+
 
 def find_pattern_file(pattern_id: int) -> Path:
     """Find pattern file by ID"""
-    for cat in ["cat1", "cat2", "cat3"]:
+    pid = f"gh{pattern_id:03d}"
+    for cat in CATEGORIES:
         cat_path = BASE / cat
         if not cat_path.exists():
             continue
-        for seq_dir in cat_path.iterdir():
-            if not seq_dir.is_dir():
-                continue
-            pattern_file = seq_dir / f"apl{pattern_id:03d}.md"
-            if pattern_file.exists():
-                return pattern_file
+        matches = list(cat_path.glob(f"{pid}-*.md"))
+        if matches:
+            return matches[0]
     return None
 
 def get_pattern(pattern_id: int) -> dict:
@@ -41,11 +43,16 @@ def get_pattern(pattern_id: int) -> dict:
     if not path:
         return None
     
-    content = path.read_text()
+    content = path.read_text(encoding="utf-8")
     
-    # Extract name from description
+    # Frontmatter looks like: description: "100 - CONTRIBUTOR PATH"
     name_match = re.search(r'description:\s*["\']?(\d+\s*-\s*)?(.+?)["\']?\s*$', content, re.MULTILINE)
-    name = name_match.group(2).strip() if name_match else f"Pattern {pattern_id}"
+    if name_match:
+        name = name_match.group(2).strip()
+    else:
+        # Fall back to the first markdown heading.
+        heading_match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)
+        name = heading_match.group(1).strip() if heading_match else f"Pattern {pattern_id}"
     
     return {"id": pattern_id, "name": name, "content": content, "path": str(path)}
 
@@ -55,37 +62,39 @@ def get_refs(pattern_id: int, ref_type: str) -> list:
     if not path:
         return []
     
-    ref_file = path.parent / f"apl{pattern_id:03d}" / f"{ref_type}.md"
+    ref_file = path.parent / f"gh{pattern_id:03d}" / f"{ref_type}.md"
     if not ref_file.exists():
         return []
     
-    content = ref_file.read_text()
-    matches = re.findall(r'-\s*apl(\d+)', content, re.IGNORECASE)
-    return [int(m) for m in matches]
+    content = ref_file.read_text(encoding="utf-8")
+    matches = re.findall(r'gh(\d{3})', content, re.IGNORECASE)
+    refs = []
+    for m in matches:
+        rid = int(m)
+        if rid != pattern_id and rid not in refs:
+            refs.append(rid)
+    return refs
 
 def search_patterns(term: str) -> list:
     """Search patterns by term"""
     results = []
     term_lower = term.lower()
     
-    for cat in ["cat1", "cat2", "cat3"]:
+    for cat in CATEGORIES:
         cat_path = BASE / cat
         if not cat_path.exists():
             continue
-        for seq_dir in cat_path.iterdir():
-            if not seq_dir.is_dir():
+        for pattern_file in cat_path.glob("gh*.md"):
+            if pattern_file.is_dir():
                 continue
-            for pattern_file in seq_dir.glob("apl*.md"):
-                if pattern_file.is_dir():
-                    continue
-                content = pattern_file.read_text()
-                if term_lower in content.lower():
-                    match = re.search(r'apl(\d+)', pattern_file.name)
-                    if match:
-                        pid = int(match.group(1))
-                        pattern = get_pattern(pid)
-                        if pattern:
-                            results.append(pattern)
+            content = pattern_file.read_text(encoding="utf-8")
+            if term_lower in content.lower():
+                match = re.match(r'gh(\d{3})', pattern_file.name)
+                if match:
+                    pid = int(match.group(1))
+                    pattern = get_pattern(pid)
+                    if pattern:
+                        results.append(pattern)
     
     return results
 
@@ -151,14 +160,14 @@ def main():
     
     elif cmd == "roots":
         print("Root patterns (no broader context):")
-        for pid in [1, 18, 24, 95, 253]:
+        for pid in [1, 18, 24, 95]:
             p = get_pattern(pid)
             if p:
                 print(f"  [{pid:3d}] {p['name']}")
     
     elif cmd == "hubs":
         print("Hub patterns (highest connectivity):")
-        hubs = [(30, 24), (249, 24), (142, 23), (107, 21), (100, 20)]
+        hubs = [(30, 24), (107, 21), (100, 20)]
         for pid, degree in hubs:
             p = get_pattern(pid)
             if p:

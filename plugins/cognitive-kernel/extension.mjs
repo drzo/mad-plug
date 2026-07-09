@@ -1,38 +1,15 @@
 import { joinSession } from "@github/copilot-sdk/extension";
-import { execFile, exec } from "node:child_process";
+import { spawn } from "node:child_process";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { runPythonScript, resolveBash } from "../_shared/procRunner.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, "..", "..");
 const scriptsDir = resolve(repoRoot, "scripts");
 
 function runPython(script, args = []) {
-    return new Promise((resolvePromise, reject) => {
-        const isWindows = process.platform === "win32";
-        const python = isWindows ? "python" : "python3";
-        execFile(python, [resolve(scriptsDir, script), ...args], {
-            cwd: repoRoot,
-            timeout: 60000,
-        }, (err, stdout, stderr) => {
-            if (err) reject(new Error(stderr || err.message));
-            else resolvePromise(stdout || stderr);
-        });
-    });
-}
-
-function runShell(script, args = []) {
-    return new Promise((resolvePromise, reject) => {
-        const isWindows = process.platform === "win32";
-        const scriptPath = resolve(scriptsDir, script);
-        const cmd = isWindows
-            ? `bash "${scriptPath}" ${args.join(" ")}`
-            : `"${scriptPath}" ${args.join(" ")}`;
-        exec(cmd, { cwd: repoRoot, timeout: 60000 }, (err, stdout, stderr) => {
-            if (err) reject(new Error(stderr || err.message));
-            else resolvePromise(stdout || stderr);
-        });
-    });
+    return runPythonScript(repoRoot, resolve(scriptsDir, script), args, 60000);
 }
 
 await joinSession({
@@ -87,16 +64,28 @@ await joinSession({
             parameters: {
                 type: "object",
                 properties: {
-                    action: { type: "string", description: "Action: 'configure', 'monitor', 'status'" },
-                    config: { type: "string", description: "Cluster configuration file or JSON" },
+                    action: { type: "string", description: "Action: 'init', 'validate', 'status', 'monitor'" },
+                    config: { type: "string", description: "Project directory (required for 'init'/'validate')" },
                 },
                 required: ["action"],
             },
             handler: async (args) => {
-                const script = args.action === "monitor" ? "cluster_monitor.py" : "configure_cluster.py";
-                const cmdArgs = args.action === "monitor" ? [] : [args.config || ""];
+                if (args.action === "monitor") {
+                    try {
+                        return await runPython("cluster_monitor.py", []);
+                    } catch (e) {
+                        return `Error: ${e.message}`;
+                    }
+                }
+                // configure_cluster.py expects: <subcommand> [project_path]
+                // where the subcommand is init/validate/status.
+                if ((args.action === "init" || args.action === "validate") && !args.config) {
+                    return `Error: action "${args.action}" requires a "config" project directory path.`;
+                }
+                const cmdArgs = [args.action];
+                if (args.config) cmdArgs.push(args.config);
                 try {
-                    return await runPython(script, cmdArgs.filter(Boolean));
+                    return await runPython("configure_cluster.py", cmdArgs);
                 } catch (e) {
                     return `Error: ${e.message}`;
                 }
@@ -108,31 +97,42 @@ await joinSession({
             parameters: {
                 type: "object",
                 properties: {
-                    action: { type: "string", description: "Action: 'start', 'stop', 'test', 'status'" },
+                    action: { type: "string", description: "Action: 'start', 'test', 'status'" },
                     daemon: { type: "string", description: "Daemon name (default: pie_nn)" },
+                    socket: { type: "string", description: "UNIX socket path the daemon listens on (default: /tmp/tc_daemon.sock)" },
                 },
                 required: ["action"],
             },
             handler: async (args) => {
-                if (args.action === "test") {
+                const socketPath = args.socket || "/tmp/tc_daemon.sock";
+                if (args.action === "test" || args.action === "status") {
+                    // test_daemon.py exercises get_status/list_modules/diagnose/etc. against
+                    // the running daemon's JSON-RPC socket, so it doubles as a status check.
                     try {
-                        return await runPython("test_daemon.py", [args.daemon || "pie_nn"]);
+                        return await runPython("test_daemon.py", [socketPath]);
                     } catch (e) {
                         return `Error: ${e.message}`;
                     }
                 }
                 if (args.action === "start") {
+                    // run_daemon.sh runs the daemon in the foreground ("Press Ctrl+C to
+                    // stop"), so it must be launched detached rather than awaited —
+                    // otherwise this call would block until the tool-call timeout.
                     try {
-                        return await runShell("run_daemon.sh", [args.daemon || "pie_nn"]);
+                        const bash = resolveBash();
+                        const scriptPath = resolve(scriptsDir, "run_daemon.sh");
+                        const child = spawn(bash, [scriptPath, socketPath], {
+                            cwd: repoRoot,
+                            detached: true,
+                            stdio: "ignore",
+                        });
+                        child.unref();
+                        return `Started daemon on socket ${socketPath} (pid ${child.pid}). Use action "status" to verify.`;
                     } catch (e) {
                         return `Error: ${e.message}`;
                     }
                 }
-                try {
-                    return await runPython("pie_nn_daemon.py", [args.action]);
-                } catch (e) {
-                    return `Error: ${e.message}`;
-                }
+                return `Error: unsupported action "${args.action}". Use 'start', 'test', or 'status'. There is no supported 'stop' action yet — terminate the daemon process directly.`;
             },
         },
     ],

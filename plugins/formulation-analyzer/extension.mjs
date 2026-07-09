@@ -1,24 +1,14 @@
 import { joinSession } from "@github/copilot-sdk/extension";
-import { execFile } from "node:child_process";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { runPythonScript } from "../_shared/procRunner.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, "..", "..");
 const scriptsDir = resolve(repoRoot, "scripts");
 
 function runScript(script, args = []) {
-    return new Promise((resolvePromise, reject) => {
-        const isWindows = process.platform === "win32";
-        const python = isWindows ? "python" : "python3";
-        execFile(python, [resolve(scriptsDir, script), ...args], {
-            cwd: repoRoot,
-            timeout: 30000,
-        }, (err, stdout, stderr) => {
-            if (err) reject(new Error(stderr || err.message));
-            else resolvePromise(stdout || stderr);
-        });
-    });
+    return runPythonScript(repoRoot, resolve(scriptsDir, script), args, 30000);
 }
 
 await joinSession({
