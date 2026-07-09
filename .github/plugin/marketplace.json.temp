@@ -1,0 +1,235 @@
+{
+  "name": "copilot-plugins",
+  "metadata": {
+    "description": "GitHub Copilot plugins",
+    "version": "1.0.0"
+  },
+  "owner": {
+    "name": "GitHub",
+    "email": "copilot@github.com"
+  },
+  "plugins": [
+    {
+      "name": "workiq",
+      "description": "Query Microsoft 365 data with natural language — emails, meetings, documents, Teams messages, and more.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Microsoft",
+        "url": "https://www.microsoft.com"
+      },
+      "homepage": "https://github.com/microsoft/work-iq",
+      "keywords": [
+        "workiq",
+        "microsoft-365",
+        "m365",
+        "copilot",
+        "email",
+        "meetings",
+        "teams"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/microsoft/work-iq",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/work-iq",
+        "path": "plugins/workiq"
+      }
+    },
+    {
+      "name": "microsoft-365-agents-toolkit",
+      "description": "Toolkit for building Microsoft 365 Copilot declarative agents — scaffolding, JSON manifest development, and capability configuration.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Microsoft",
+        "url": "https://www.microsoft.com"
+      },
+      "homepage": "https://github.com/microsoft/work-iq",
+      "keywords": [
+        "m365",
+        "agents",
+        "declarative-agent",
+        "copilot",
+        "teams",
+        "toolkit"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/microsoft/work-iq",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/work-iq",
+        "path": "plugins/microsoft-365-agents-toolkit"
+      }
+    },
+    {
+      "name": "workiq-productivity",
+      "description": "WorkIQ productivity skills powered by the local WorkIQ CLI — read-only insights across email, meetings, calendar, Teams, SharePoint, projects, and people.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Microsoft",
+        "url": "https://www.microsoft.com"
+      },
+      "homepage": "https://github.com/microsoft/work-iq",
+      "keywords": [
+        "workiq",
+        "productivity",
+        "email",
+        "meetings",
+        "teams",
+        "sharepoint",
+        "planner"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/microsoft/work-iq",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/work-iq",
+        "path": "plugins/workiq-productivity"
+      }
+    },
+    {
+      "name": "spark",
+      "source": "./plugins/spark",
+      "description": "Spark plugin for GitHub Copilot.",
+      "version": "1.0.0",
+      "skills": [
+        "./skills/spark"
+      ]
+    },
+    {
+      "name": "advanced-security",
+      "source": {
+        "source": "github",
+        "repo": "github/copilot-advanced-security-plugin"
+      },
+      "description": "Advanced Security plugin for GitHub Copilot.",
+      "version": "1.0.0",
+      "repository": "https://github.com/github/copilot-advanced-security-plugin"
+    },
+    {
+      "name": "fabric-skills",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/skills-for-fabric",
+        "path": "plugins/fabric-skills"
+      },
+      "description": "Complete bundle: all Microsoft Skills for Fabric for developers and consumers.",
+      "version": "0.3.0",
+      "repository": "https://github.com/microsoft/skills-for-fabric",
+      "keywords": [
+        "fabric",
+        "microsoft-fabric",
+        "medallion",
+        "data-warehouse",
+        "lakehouse",
+        "analytics",
+        "kql",
+        "kusto",
+        "eventhouse",
+        "real-time-intelligence"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "fabric-authoring",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/skills-for-fabric",
+        "path": "plugins/fabric-authoring"
+      },
+      "description": "Developer skills for authoring Microsoft Fabric solutions - SDKs, APIs, automation scripts, CI/CD.",
+      "version": "0.3.0",
+      "repository": "https://github.com/microsoft/skills-for-fabric",
+      "keywords": [
+        "fabric",
+        "microsoft-fabric",
+        "authoring",
+        "developer",
+        "sdk",
+        "api"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "fabric-consumption",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/skills-for-fabric",
+        "path": "plugins/fabric-consumption"
+      },
+      "description": "Consumer skills for interactive Microsoft Fabric operations - queries, exploration, monitoring.",
+      "version": "0.3.0",
+      "repository": "https://github.com/microsoft/skills-for-fabric",
+      "keywords": [
+        "fabric",
+        "microsoft-fabric",
+        "consumption",
+        "query",
+        "exploration"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "fabric-operations",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/skills-for-fabric",
+        "path": "plugins/fabric-operations"
+      },
+      "description": "Operations skills for diagnosing Microsoft Fabric performance and health - system views, multi-step investigation workflows.",
+      "version": "0.3.0",
+      "repository": "https://github.com/microsoft/skills-for-fabric",
+      "keywords": [
+        "fabric",
+        "microsoft-fabric",
+        "operations",
+        "monitoring",
+        "diagnostics",
+        "performance"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "powerbi-authoring",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/skills-for-fabric",
+        "path": "plugins/powerbi-authoring"
+      },
+      "description": "Developer skills for authoring Microsoft Power BI solutions.",
+      "version": "0.3.3",
+      "repository": "https://github.com/microsoft/skills-for-fabric",
+      "keywords": [
+        "fabric",
+        "microsoft-fabric",
+        "authoring",
+        "powerbi",
+        "semantic-model",
+        "pbip",
+        "pbir",
+        "report",
+        "developer"
+      ],
+      "license": "MIT"
+    },
+    {
+      "name": "cpp-language-server",
+      "source": {
+        "source": "github",
+        "repo": "microsoft/cpp-language-server",
+        "path": "plugins/cpp-language-server"
+      },
+      "description": "Navigate and interact with your C++ code using the Microsoft C++ Language Server.",
+      "version": "0.1.1",
+      "repository": "https://github.com/microsoft/cpp-language-server",
+      "keywords": [
+        "cpp",
+        "c++",
+        "refactoring",
+        "code-analysis",
+        "lsp",
+        "language-server"
+      ],
+      "license": "See EULA/LICENSE.txt in @microsoft/cpp-language-server NPM package"
+    }
+  ]
+}
