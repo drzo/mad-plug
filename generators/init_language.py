@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Initialize a new language project under /home/ubuntu/skills/<language-name>/.
+Initialize a new language project under <output>/<language-name>/ (default: ~/skills/<language-name>/).
 
 Usage:
-    python init_language.py <language-name>
+    python init_language.py <language-name> [--output DIR]
 
 Creates:
     /home/ubuntu/skills/<language-name>/
@@ -21,8 +21,9 @@ import sys
 import textwrap
 
 
-def init_language(name: str) -> None:
-    base = f"/home/ubuntu/skills/{name}"
+def init_language(name: str, output_dir: str = None) -> None:
+    output_dir = output_dir or os.path.expanduser("~/skills")
+    base = f"{output_dir.rstrip('/').rstrip(chr(92))}/{name}"
     if os.path.exists(base):
         print(f"⚠️  Directory already exists: {base}")
         print("   Skipping initialization. Delete the directory first to re-init.")
@@ -234,7 +235,11 @@ def init_language(name: str) -> None:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python init_language.py <language-name>")
-        sys.exit(1)
-    init_language(sys.argv[1])
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Initialize a new language project scaffold.")
+    parser.add_argument("name", help="Name for the new language")
+    parser.add_argument("--output", help="Output directory to create <name>/ under (default: ~/skills)")
+    args = parser.parse_args()
+
+    init_language(args.name, args.output)

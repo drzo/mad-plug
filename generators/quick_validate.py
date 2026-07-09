@@ -22,7 +22,13 @@ import subprocess
 
 
 def validate_language(name: str) -> bool:
-    base = f"/home/ubuntu/skills/{name}"
+    # Accept either a direct path to the project (relative or absolute) or a
+    # bare language name, in which case fall back to the conventional
+    # ~/skills/<name> location.
+    if os.path.exists(name) or os.sep in name or "/" in name or os.path.isabs(name):
+        base = name
+    else:
+        base = os.path.join(os.path.expanduser("~/skills"), name)
     errors = []
     warnings = []
 
