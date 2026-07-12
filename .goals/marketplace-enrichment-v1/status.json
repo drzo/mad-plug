@@ -1,20 +1,22 @@
 {
   "goal_id": "marketplace-enrichment-v1",
-  "status": "fail",
-  "iteration": 1,
+  "status": "complete",
+  "iteration": 2,
   "builder_model": "Claude:Sonnet-4.6",
   "inspector_model": "Claude:Haiku-4.5",
   "initial_sha": "facdcdade4ba04cfbc67fdbb7e978ed7bf769a62",
   "created_at": "2026-07-12T07:54:00+02:00",
-  "inspection_completed_at": "2026-07-12T08:19:04+02:00",
-  "verdict": "FAIL",
-  "passing_criteria": "7/8 ACs",
-  "critical_issue": "AC3 — conflicting marketplace.json duplicate at .github/plugin/marketplace.json",
+  "completed_at": "2026-07-12T08:28:54+02:00",
   "history": [
     {
-      "event": "inspection_complete",
-      "timestamp": "2026-07-12T08:19:04+02:00",
-      "feedback": "inspector-feedback-1.md"
+      "iteration": 1,
+      "verdict": "FAIL",
+      "summary": "7/8 ACs passed. AC3 failed: .github/plugin/marketplace.json still conflicts with root (different names, versions, missing fields)"
+    },
+    {
+      "iteration": 2,
+      "verdict": "PASS",
+      "summary": "All 8 ACs passed. AC3 fixed: .github/plugin/marketplace.json replaced with pointer-only file. Single source of truth established."
     }
   ]
 }
