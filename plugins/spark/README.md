@@ -77,6 +77,20 @@ None
 
 ---
 
+## Version
+
+0.1.0
+
+---
+
+## Category & Tags
+
+Category: `code-generation`
+
+Tags: `web` `react` `vite` `typescript` `scaffold` `stack`
+
+---
+
 ## What it does
 
 Spark helps you quickly bootstrap high-quality web applications by providing:

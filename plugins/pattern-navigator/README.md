@@ -68,6 +68,20 @@ None
 
 ---
 
+## Version
+
+0.1.0
+
+---
+
+## Category & Tags
+
+Category: `pattern-recognition`
+
+Tags: `pattern` `topology` `navigation` `graph`
+
+---
+
 ## Scripts
 
 Backend Python scripts in `scripts/`:
