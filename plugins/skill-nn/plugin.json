@@ -1,0 +1,16 @@
+{
+  "name": "skill-nn",
+  "version": "0.1.0",
+  "description": "Differentiable skill framework treating skills as neural network modules. Use when composing skills into pipelines, opti",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "skill",
+    "neural-network"
+  ],
+  "dependencies": [],
+  "tools": [
+    "skill_nn_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

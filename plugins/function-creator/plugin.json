@@ -1,0 +1,16 @@
+{
+  "name": "function-creator",
+  "version": "0.1.0",
+  "description": "Higher-order skill transformation engine that maps existing skills into analogous domains. Use when transforming a skill",
+  "category": "skill-engineering",
+  "tags": [
+    "skill",
+    "transform",
+    "template"
+  ],
+  "dependencies": [],
+  "tools": [
+    "function_creator_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "inferno-devcontainer",
+  "version": "0.1.0",
+  "description": "Optimal devcontainer configuration for Inferno-OS cognitive kernel development. Use when setting up Inferno-OS developme",
+  "category": "skill-engineering",
+  "tags": [
+    "transform",
+    "cognitive",
+    "kernel",
+    "distributed",
+    "opencog"
+  ],
+  "dependencies": [],
+  "tools": [
+    "inferno_devcontainer_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

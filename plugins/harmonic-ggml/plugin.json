@@ -1,0 +1,14 @@
+{
+  "name": "harmonic-ggml",
+  "version": "0.1.0",
+  "description": "Build minimal GGML tensor libraries for the frequency domain. Use when implementing harmonic tensor operations, continuo",
+  "category": "code-generation",
+  "tags": [
+    "inference"
+  ],
+  "dependencies": [],
+  "tools": [
+    "harmonic_ggml_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

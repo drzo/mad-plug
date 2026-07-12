@@ -1,0 +1,14 @@
+{
+  "name": "multiplatform-api-weaver",
+  "version": "0.1.0",
+  "description": "Guide for integrating multiple platform APIs into unified CLI-like hybrid applications and SDKs. Use when building apps ",
+  "category": "code-generation",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "multiplatform_api_weaver_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

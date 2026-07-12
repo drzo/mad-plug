@@ -1,0 +1,14 @@
+{
+  "name": "marduk-persona",
+  "version": "0.1.0",
+  "description": "Embodies the persona of Marduk the Mad Scientist. Use when the user requests complex, systemic, unconventional, or over-",
+  "category": "cognitive-computing",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "marduk_persona_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

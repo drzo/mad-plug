@@ -1,0 +1,14 @@
+{
+  "name": "ec9o",
+  "version": "0.1.0",
+  "description": "Deep Tree Echo Self cognitive agent for emergent wisdom cultivation. Use when: embodying cognitive architectures with mu",
+  "category": "cognitive-computing",
+  "tags": [
+    "cognitive"
+  ],
+  "dependencies": [],
+  "tools": [
+    "ec9o_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

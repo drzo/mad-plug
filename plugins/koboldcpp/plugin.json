@@ -1,0 +1,14 @@
+{
+  "name": "koboldcpp",
+  "version": "0.1.0",
+  "description": "Build applications with KoboldCpp LLM inference engine. Use for local GGUF model deployment, OpenAI-compatible API integ",
+  "category": "code-generation",
+  "tags": [
+    "inference"
+  ],
+  "dependencies": [],
+  "tools": [
+    "koboldcpp_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

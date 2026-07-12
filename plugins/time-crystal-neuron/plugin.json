@@ -1,0 +1,14 @@
+{
+  "name": "time-crystal-neuron",
+  "version": "0.1.0",
+  "description": "Constructs a time crystal generalized neuron model for a given context, mapping domain concepts to the hierarchical temp",
+  "category": "cognitive-computing",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "time_crystal_neuron_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

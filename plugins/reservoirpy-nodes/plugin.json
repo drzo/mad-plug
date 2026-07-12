@@ -1,0 +1,14 @@
+{
+  "name": "reservoirpy-nodes",
+  "version": "0.1.0",
+  "description": "Create custom ReservoirPy nodes for reservoir computing architectures. Use when implementing custom neural operators, tr",
+  "category": "pattern-recognition",
+  "tags": [
+    "graph"
+  ],
+  "dependencies": [],
+  "tools": [
+    "reservoirpy_nodes_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

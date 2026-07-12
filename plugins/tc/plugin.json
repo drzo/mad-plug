@@ -1,0 +1,14 @@
+{
+  "name": "tc",
+  "version": "0.1.0",
+  "description": "Total Commander file management operations: batch rename, search, copy/move, archive pack/unpack, directory tree, and fi",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern"
+  ],
+  "dependencies": [],
+  "tools": [
+    "tc_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

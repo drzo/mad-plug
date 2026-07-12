@@ -1,0 +1,17 @@
+{
+  "name": "time-crystal-daemon",
+  "version": "0.1.0",
+  "description": "Build and operate time crystal daemons with LLM interfaces. Use for creating deterministic cognitive services with natur",
+  "category": "code-generation",
+  "tags": [
+    "language",
+    "cognitive",
+    "kernel",
+    "opencog"
+  ],
+  "dependencies": [],
+  "tools": [
+    "time_crystal_daemon_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

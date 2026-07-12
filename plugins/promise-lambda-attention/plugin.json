@@ -1,0 +1,14 @@
+{
+  "name": "promise-lambda-attention",
+  "version": "0.1.0",
+  "description": "Implements the Promise-Lambda Attention paradigm, a constraint-satisfaction mechanism where a promise (\u03bb) filters a mani",
+  "category": "cognitive-computing",
+  "tags": [
+    "attention"
+  ],
+  "dependencies": [],
+  "tools": [
+    "promise_lambda_attention_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

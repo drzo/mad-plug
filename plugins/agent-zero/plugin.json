@@ -1,0 +1,14 @@
+{
+  "name": "agent-zero",
+  "version": "0.1.0",
+  "description": "Build and extend Agent Zero autonomous AI agents. Use for creating custom tools, extensions, prompts, instruments, and a",
+  "category": "code-generation",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "agent_zero_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

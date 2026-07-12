@@ -1,0 +1,18 @@
+{
+  "name": "skill-infinity",
+  "version": "0.1.0",
+  "description": "The cognitive kernel \u2014 a self-referential, self-improving skill architecture derived as the fixed point of applying neur",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "skill",
+    "composition",
+    "cognitive",
+    "kernel"
+  ],
+  "dependencies": [],
+  "tools": [
+    "skill_infinity_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

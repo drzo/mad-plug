@@ -1,0 +1,15 @@
+{
+  "name": "magic-patterns",
+  "version": "0.1.0",
+  "description": "Generate UI components from natural language using Magic Patterns. Use when creating React/HTML components, prototyping ",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "language"
+  ],
+  "dependencies": [],
+  "tools": [
+    "magic_patterns_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

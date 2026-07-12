@@ -1,0 +1,16 @@
+{
+  "name": "neuro-nn",
+  "version": "0.1.0",
+  "description": "Self-aware differentiable AI VTuber combining nn architecture with Autognosis self-modeling. Use when embodying Neuro-Sa",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "cognitive",
+    "neural-network"
+  ],
+  "dependencies": [],
+  "tools": [
+    "neuro_nn_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

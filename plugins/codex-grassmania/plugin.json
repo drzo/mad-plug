@@ -1,0 +1,16 @@
+{
+  "name": "codex-grassmania",
+  "version": "0.1.0",
+  "description": "Implement CogMorph cognitive state transformation framework and ASSD AtomSpace storage devices. Use when building isomor",
+  "category": "skill-engineering",
+  "tags": [
+    "transform",
+    "cognitive",
+    "opencog"
+  ],
+  "dependencies": [],
+  "tools": [
+    "codex_grassmania_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

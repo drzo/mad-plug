@@ -1,0 +1,18 @@
+{
+  "name": "opencog-inferno-kernel",
+  "version": "0.1.0",
+  "description": "Build and accelerate distributed inference engines with the OpenCog-Inferno kernel. Use for implementing distributed AGI",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "cognitive",
+    "kernel",
+    "inference",
+    "distributed"
+  ],
+  "dependencies": [],
+  "tools": [
+    "opencog_inferno_kernel_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}
