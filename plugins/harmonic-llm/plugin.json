@@ -1,0 +1,14 @@
+{
+  "name": "harmonic-llm",
+  "version": "0.1.0",
+  "description": "Build minimal LLM inference engines for the frequency domain. Use when creating harmonic oscillator chatbots, implementi",
+  "category": "code-generation",
+  "tags": [
+    "inference"
+  ],
+  "dependencies": [],
+  "tools": [
+    "harmonic_llm_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

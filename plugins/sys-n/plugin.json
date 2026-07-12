@@ -1,0 +1,14 @@
+{
+  "name": "sys-n",
+  "version": "0.1.0",
+  "description": "Deterministic state transition modeling framework for System n architectures. Use when modeling cyclic state machines wi",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern"
+  ],
+  "dependencies": [],
+  "tools": [
+    "sys_n_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

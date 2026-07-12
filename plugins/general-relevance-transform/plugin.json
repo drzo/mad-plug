@@ -1,0 +1,16 @@
+{
+  "name": "general-relevance-transform",
+  "version": "0.1.0",
+  "description": "A unifying framework for applying the General Relevance architecture to any domain of inquiry. Use this skill to transfo",
+  "category": "skill-engineering",
+  "tags": [
+    "skill",
+    "transform",
+    "grammar"
+  ],
+  "dependencies": [],
+  "tools": [
+    "general_relevance_transform_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

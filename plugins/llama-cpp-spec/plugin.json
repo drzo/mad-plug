@@ -1,0 +1,15 @@
+{
+  "name": "llama-cpp-spec",
+  "version": "0.1.0",
+  "description": "Generate minimal/tiny LLM inference engines for WASM web workers, edge devices, and embedded chatbots. Use when building",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "inference"
+  ],
+  "dependencies": [],
+  "tools": [
+    "llama_cpp_spec_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

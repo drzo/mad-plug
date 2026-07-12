@@ -1,0 +1,14 @@
+{
+  "name": "nn",
+  "version": "0.1.0",
+  "description": "Build and train neural networks with Torch7's nn package. Use when creating MLPs, CNNs, RNNs, or custom layers in Lua/To",
+  "category": "code-generation",
+  "tags": [
+    "neural-network"
+  ],
+  "dependencies": [],
+  "tools": [
+    "nn_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "scm-des",
+  "version": "0.1.0",
+  "description": "Build discrete event simulations for supply chain management using CogSim PML. Use for modeling multi-actor supply chain",
+  "category": "code-generation",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "scm_des_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

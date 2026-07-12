@@ -1,0 +1,17 @@
+{
+  "name": "unicorn-dynamics",
+  "version": "0.1.0",
+  "description": "Strategic visual planning and operational intelligence using the Unicorn Dynamics framework. Use for organizational visi",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "graph",
+    "transform",
+    "cognitive"
+  ],
+  "dependencies": [],
+  "tools": [
+    "unicorn_dynamics_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ggml-spec",
+  "version": "0.1.0",
+  "description": "Build minimal GGML tensor library implementations from formal specifications. Use when creating custom ML inference engi",
+  "category": "code-generation",
+  "tags": [
+    "inference"
+  ],
+  "dependencies": [],
+  "tools": [
+    "ggml_spec_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

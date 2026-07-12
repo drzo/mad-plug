@@ -1,0 +1,17 @@
+{
+  "name": "gauge-hypergraph-network",
+  "version": "0.1.0",
+  "description": "Provides a conceptual framework for understanding and designing Gauge-Equivariant Transformers as Federated Hypergraph N",
+  "category": "pattern-recognition",
+  "tags": [
+    "graph",
+    "transform",
+    "gauge",
+    "hypergraph"
+  ],
+  "dependencies": [],
+  "tools": [
+    "gauge_hypergraph_network_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

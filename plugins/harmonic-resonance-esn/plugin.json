@@ -1,0 +1,14 @@
+{
+  "name": "harmonic-resonance-esn",
+  "version": "0.1.0",
+  "description": "Create custom ReservoirPy nodes for frequency-domain Echo State Networks (ESNs). Use when building harmonic oscillator r",
+  "category": "code-generation",
+  "tags": [
+    "cognitive"
+  ],
+  "dependencies": [],
+  "tools": [
+    "harmonic_resonance_esn_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

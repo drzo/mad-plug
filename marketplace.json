@@ -8,38 +8,366 @@
     "url": "https://github.com/drzo"
   },
   "metadata": {
-    "description": "COG253 Unified Skill Lattice — cognitive capabilities mapped to Christopher Alexander's 253-pattern topology for navigating, discovering, and composing skills across ecosystem/component/implementation hierarchies.",
+    "description": "COG253 Unified Skill Lattice \u2014 cognitive capabilities mapped to Christopher Alexander's 253-pattern topology for navigating, discovering, and composing skills across ecosystem/component/implementation hierarchies.",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "pattern-navigator",
-      "source": "plugins/pattern-navigator",
-      "description": "Navigate and query the GH253 pattern topology — 253 patterns mapped to GitHub/software domains with relationship traversal and domain mapping.",
-      "version": "0.1.0",
-      "category": "pattern-recognition",
-      "tags": ["pattern", "topology", "navigation", "graph"],
-      "author": { "name": "drzo", "url": "https://github.com/drzo" },
-      "license": "MIT"
-    },
-    {
-      "name": "skill-composer",
-      "source": "plugins/skill-composer",
-      "description": "Decompose, transform, and compose skills across domains using structural analogy and the General Relevance Transform.",
-      "version": "0.1.0",
-      "category": "skill-engineering",
-      "tags": ["skill", "composition", "transform", "analogy"],
-      "author": { "name": "drzo", "url": "https://github.com/drzo" },
-      "license": "MIT"
-    },
-    {
-      "name": "template-generator",
-      "source": "plugins/template-generator",
-      "description": "Scaffold new skills, extensions, and projects from curated templates covering Lua/nn, Plan 9, WASM, and more.",
+      "name": "agent-toga",
+      "source": "plugins/agent-toga",
+      "description": "Build AI agents with Himiko Toga personality for security testing and code analysis. Use for penetration testing assista",
       "version": "0.1.0",
       "category": "code-generation",
-      "tags": ["scaffold", "template", "generator", "extension"],
-      "author": { "name": "drzo", "url": "https://github.com/drzo" },
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "agent-zero",
+      "source": "plugins/agent-zero",
+      "description": "Build and extend Agent Zero autonomous AI agents. Use for creating custom tools, extensions, prompts, instruments, and a",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "apl253",
+      "source": "plugins/apl253",
+      "description": "Christopher Alexander's \"A Pattern Language\" (253 patterns) for design across domains. Use for pattern-based design thin",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "transform",
+        "language"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "clawcog",
+      "source": "plugins/clawcog",
+      "description": "Develop, configure, extend, and operate OpenCog (clawcog) \u2014 a personal AI assistant gateway with multi-channel messaging",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "skill",
+        "cognitive",
+        "opencog"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "codex-grassmania",
+      "source": "plugins/codex-grassmania",
+      "description": "Implement CogMorph cognitive state transformation framework and ASSD AtomSpace storage devices. Use when building isomor",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "transform",
+        "cognitive",
+        "opencog"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "cognitive-kernel",
+      "source": "plugins/cognitive-kernel",
+      "description": "Build and operate cognitive development kernels \u2014 Plan 9, Inferno-OS, and OpenCog-based distributed inference systems.",
+      "version": "0.1.0",
+      "category": "cognitive-computing",
+      "tags": [
+        "kernel",
+        "plan9",
+        "distributed",
+        "inference",
+        "opencog"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "cogsim-pml",
+      "source": "plugins/cogsim-pml",
+      "description": "Build process-centric discrete event simulations using CogSim's Process Modeling Library (PML). Use for queueing systems",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "dgen",
+      "source": "plugins/dgen",
+      "description": "Integrates with the DreamGen (dgen) API for advanced creative writing and role-playing. Use for story generation, charac",
+      "version": "0.1.0",
+      "category": "cognitive-computing",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "ec9o",
+      "source": "plugins/ec9o",
+      "description": "Deep Tree Echo Self cognitive agent for emergent wisdom cultivation. Use when: embodying cognitive architectures with mu",
+      "version": "0.1.0",
+      "category": "cognitive-computing",
+      "tags": [
+        "cognitive"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "formulation-analyzer",
+      "source": "plugins/formulation-analyzer",
+      "description": "Analyze and optimize formulations \u2014 skincare compounds, neural network topologies, brain models, and mathematical constructs.",
+      "version": "0.1.0",
+      "category": "scientific-computing",
+      "tags": [
+        "formulation",
+        "neural-network",
+        "brain-model",
+        "optimization",
+        "mathematics"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "function-creator",
+      "source": "plugins/function-creator",
+      "description": "Higher-order skill transformation engine that maps existing skills into analogous domains. Use when transforming a skill",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "skill",
+        "transform",
+        "template"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "gauge-hypergraph-network",
+      "source": "plugins/gauge-hypergraph-network",
+      "description": "Provides a conceptual framework for understanding and designing Gauge-Equivariant Transformers as Federated Hypergraph N",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "graph",
+        "transform",
+        "gauge",
+        "hypergraph"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "general-relevance-transform",
+      "source": "plugins/general-relevance-transform",
+      "description": "A unifying framework for applying the General Relevance architecture to any domain of inquiry. Use this skill to transfo",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "skill",
+        "transform",
+        "grammar"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "get-shit-done",
+      "source": "plugins/get-shit-done",
+      "description": "Meta-prompting, context engineering, and spec-driven development system for Claude Code, OpenCode, and Gemini CLI. Use w",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "ggml-spec",
+      "source": "plugins/ggml-spec",
+      "description": "Build minimal GGML tensor library implementations from formal specifications. Use when creating custom ML inference engi",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "inference"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "gh253",
+      "source": "plugins/gh253",
+      "description": "A Pattern Language for GitHub - 253 interconnected patterns for designing enterprises, organisations, and repositories. ",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "language",
+        "optimization"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "harmonic-ggml",
+      "source": "plugins/harmonic-ggml",
+      "description": "Build minimal GGML tensor libraries for the frequency domain. Use when implementing harmonic tensor operations, continuo",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "inference"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "harmonic-llm",
+      "source": "plugins/harmonic-llm",
+      "description": "Build minimal LLM inference engines for the frequency domain. Use when creating harmonic oscillator chatbots, implementi",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "inference"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "harmonic-resonance-esn",
+      "source": "plugins/harmonic-resonance-esn",
+      "description": "Create custom ReservoirPy nodes for frequency-domain Echo State Networks (ESNs). Use when building harmonic oscillator r",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "cognitive"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "hypergauge-orbifold",
+      "source": "plugins/hypergauge-orbifold",
+      "description": "Provides a conceptual framework for understanding and designing neural architectures as Hypergauge Orbifolds. Use when a",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "gauge",
+        "orbifold"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "inferno-devcontainer",
+      "source": "plugins/inferno-devcontainer",
+      "description": "Optimal devcontainer configuration for Inferno-OS cognitive kernel development. Use when setting up Inferno-OS developme",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "transform",
+        "cognitive",
+        "kernel",
+        "distributed",
+        "opencog"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "koboldcpp",
+      "source": "plugins/koboldcpp",
+      "description": "Build applications with KoboldCpp LLM inference engine. Use for local GGUF model deployment, OpenAI-compatible API integ",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "inference"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
       "license": "MIT"
     },
     {
@@ -48,28 +376,439 @@
       "description": "Design and create domain-specific languages with grammar definitions, parsers, lexicon extraction, and validation.",
       "version": "0.1.0",
       "category": "language-design",
-      "tags": ["dsl", "grammar", "parser", "language"],
-      "author": { "name": "drzo", "url": "https://github.com/drzo" },
+      "tags": [
+        "dsl",
+        "grammar",
+        "parser",
+        "language"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
       "license": "MIT"
     },
     {
-      "name": "cognitive-kernel",
-      "source": "plugins/cognitive-kernel",
-      "description": "Build and operate cognitive development kernels — Plan 9, Inferno-OS, and OpenCog-based distributed inference systems.",
+      "name": "llama-cpp-spec",
+      "source": "plugins/llama-cpp-spec",
+      "description": "Generate minimal/tiny LLM inference engines for WASM web workers, edge devices, and embedded chatbots. Use when building",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "inference"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "magic-patterns",
+      "source": "plugins/magic-patterns",
+      "description": "Generate UI components from natural language using Magic Patterns. Use when creating React/HTML components, prototyping ",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "language"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "manuscog-cognitive-devkernel",
+      "source": "plugins/manuscog-cognitive-devkernel",
+      "description": "Self-aware Inferno-OS cognitive development kernel synthesized from skill-creator(Autognosis(inferno-devcontainer[promis",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "skill",
+        "cognitive",
+        "kernel",
+        "attention",
+        "opencog"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "marduk-persona",
+      "source": "plugins/marduk-persona",
+      "description": "Embodies the persona of Marduk the Mad Scientist. Use when the user requests complex, systemic, unconventional, or over-",
       "version": "0.1.0",
       "category": "cognitive-computing",
-      "tags": ["kernel", "plan9", "distributed", "inference", "opencog"],
-      "author": { "name": "drzo", "url": "https://github.com/drzo" },
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
       "license": "MIT"
     },
     {
-      "name": "formulation-analyzer",
-      "source": "plugins/formulation-analyzer",
-      "description": "Analyze and optimize formulations — skincare compounds, neural network topologies, brain models, and mathematical constructs.",
+      "name": "multiplatform-api-weaver",
+      "source": "plugins/multiplatform-api-weaver",
+      "description": "Guide for integrating multiple platform APIs into unified CLI-like hybrid applications and SDKs. Use when building apps ",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "neuro-nn",
+      "source": "plugins/neuro-nn",
+      "description": "Self-aware differentiable AI VTuber combining nn architecture with Autognosis self-modeling. Use when embodying Neuro-Sa",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "cognitive",
+        "neural-network"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "nn",
+      "source": "plugins/nn",
+      "description": "Build and train neural networks with Torch7's nn package. Use when creating MLPs, CNNs, RNNs, or custom layers in Lua/To",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "neural-network"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "npu",
+      "source": "plugins/npu",
+      "description": "Build and operate Neural Processing Unit virtual hardware abstractions for LLM integration. Use when modeling LLM infere",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "transform",
+        "cognitive",
+        "inference"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "o9c",
+      "source": "plugins/o9c",
+      "description": "A self-referential cognitive kernel synthesized from the recursive composition of sys-n, hypergauge-orbifold, and marduk",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "skill",
+        "composition",
+        "cognitive",
+        "kernel",
+        "gauge"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "opencog-inferno-kernel",
+      "source": "plugins/opencog-inferno-kernel",
+      "description": "Build and accelerate distributed inference engines with the OpenCog-Inferno kernel. Use for implementing distributed AGI",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "cognitive",
+        "kernel",
+        "inference",
+        "distributed"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "pattern-navigator",
+      "source": "plugins/pattern-navigator",
+      "description": "Navigate and query the GH253 pattern topology \u2014 253 patterns mapped to GitHub/software domains with relationship traversal and domain mapping.",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "topology",
+        "navigation",
+        "graph"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "pie-nn",
+      "source": "plugins/pie-nn",
+      "description": "Generate and operate the PIE-NN cognitive language architecture. Use when creating or interacting with a differentiable ",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "skill",
+        "composition",
+        "language",
+        "cognitive"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "plan9-cognitive-devkernel",
+      "source": "plugins/plan9-cognitive-devkernel",
+      "description": "Plan 9 from Bell Labs cognitive development kernel with per-process namespace-based cognitive architecture. Use when set",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "transform",
+        "cognitive",
+        "kernel",
+        "distributed",
+        "plan9"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "plan9-devcontainer",
+      "source": "plugins/plan9-devcontainer",
+      "description": "Optimal devcontainer configuration for Plan 9 from Bell Labs / 9front development. Use when setting up Plan 9 developmen",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "transform",
+        "distributed",
+        "plan9",
+        "inferno"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "plan9-file-server",
+      "source": "plugins/plan9-file-server",
+      "description": "Set up a Plan 9 file server cluster with multiple CPU servers, authentication, and cognitive namespace integration. Use ",
+      "version": "0.1.0",
+      "category": "cognitive-computing",
+      "tags": [
+        "cognitive",
+        "kernel",
+        "distributed",
+        "plan9"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "pro-to-com-is-exe",
+      "source": "plugins/pro-to-com-is-exe",
+      "description": "Protocol-to-Command-is-Executable. An advanced legal case analysis skill using an integrated Promise-Lambda Attention (Q",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "skill",
+        "attention"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "promise-lambda-attention",
+      "source": "plugins/promise-lambda-attention",
+      "description": "Implements the Promise-Lambda Attention paradigm, a constraint-satisfaction mechanism where a promise (\u03bb) filters a mani",
+      "version": "0.1.0",
+      "category": "cognitive-computing",
+      "tags": [
+        "attention"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "regimorg",
+      "source": "plugins/regimorg",
+      "description": "RegimA skincare expertise with Zone Concept framework. Use for skincare consultations, product recommendations based on ",
+      "version": "0.1.0",
+      "category": "cognitive-computing",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "reservoirpy-nodes",
+      "source": "plugins/reservoirpy-nodes",
+      "description": "Create custom ReservoirPy nodes for reservoir computing architectures. Use when implementing custom neural operators, tr",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "graph"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "scm-des",
+      "source": "plugins/scm-des",
+      "description": "Build discrete event simulations for supply chain management using CogSim PML. Use for modeling multi-actor supply chain",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "skill-composer",
+      "source": "plugins/skill-composer",
+      "description": "Decompose, transform, and compose skills across domains using structural analogy and the General Relevance Transform.",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "skill",
+        "composition",
+        "transform",
+        "analogy"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "skill-infinity",
+      "source": "plugins/skill-infinity",
+      "description": "The cognitive kernel \u2014 a self-referential, self-improving skill architecture derived as the fixed point of applying neur",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "skill",
+        "composition",
+        "cognitive",
+        "kernel"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "skill-nn",
+      "source": "plugins/skill-nn",
+      "description": "Differentiable skill framework treating skills as neural network modules. Use when composing skills into pipelines, opti",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "skill",
+        "neural-network"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "skinform",
+      "source": "plugins/skinform",
+      "description": "AI-powered skincare formulation assistant with virtual chemical reaction simulation. Use for creating cosmetic formulati",
       "version": "0.1.0",
       "category": "scientific-computing",
-      "tags": ["formulation", "neural-network", "brain-model", "optimization", "mathematics"],
-      "author": { "name": "drzo", "url": "https://github.com/drzo" },
+      "tags": [
+        "formulation"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "skinform-optim",
+      "source": "plugins/skinform-optim",
+      "description": "Generate maximally effective skincare formulations using neural hypergraph embeddings and constraint optimization. Use f",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "graph",
+        "optimization",
+        "formulation",
+        "hypergraph"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
       "license": "MIT"
     },
     {
@@ -78,8 +817,166 @@
       "description": "Comprehensive guidance for building modern web applications with opinionated defaults for tech stack, design system, and code standards.",
       "version": "0.1.0",
       "category": "code-generation",
-      "tags": ["web", "react", "vite", "typescript", "scaffold", "stack"],
-      "author": { "name": "drzo", "url": "https://github.com/drzo" },
+      "tags": [
+        "web",
+        "react",
+        "vite",
+        "typescript",
+        "scaffold",
+        "stack"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "sys-n",
+      "source": "plugins/sys-n",
+      "description": "Deterministic state transition modeling framework for System n architectures. Use when modeling cyclic state machines wi",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "tc",
+      "source": "plugins/tc",
+      "description": "Total Commander file management operations: batch rename, search, copy/move, archive pack/unpack, directory tree, and fi",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "template-generator",
+      "source": "plugins/template-generator",
+      "description": "Scaffold new skills, extensions, and projects from curated templates covering Lua/nn, Plan 9, WASM, and more.",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "scaffold",
+        "template",
+        "generator",
+        "extension"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "time-crystal-daemon",
+      "source": "plugins/time-crystal-daemon",
+      "description": "Build and operate time crystal daemons with LLM interfaces. Use for creating deterministic cognitive services with natur",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "language",
+        "cognitive",
+        "kernel",
+        "opencog"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "time-crystal-neuron",
+      "source": "plugins/time-crystal-neuron",
+      "description": "Constructs hierarchical time crystal models for single neurons or the entire brain, mapping domain concepts to the tempo",
+      "version": "0.1.0",
+      "category": "cognitive-computing",
+      "tags": [
+        "cognitive-computing"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "time-crystal-nn",
+      "source": "plugins/time-crystal-nn",
+      "description": "Build time crystal neural networks with Torch7 nn modules. Use for implementing hierarchical oscillatory architectures b",
+      "version": "0.1.0",
+      "category": "code-generation",
+      "tags": [
+        "neural-network"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "topology-weaver",
+      "source": "plugins/topology-weaver",
+      "description": "Generate neural network topology specifications using analogous reference terminology from a given conceptual context. U",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "topology",
+        "transform",
+        "grammar",
+        "neural-network"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "unicorn-dynamics",
+      "source": "plugins/unicorn-dynamics",
+      "description": "Strategic visual planning and operational intelligence using the Unicorn Dynamics framework. Use for organizational visi",
+      "version": "0.1.0",
+      "category": "pattern-recognition",
+      "tags": [
+        "pattern",
+        "graph",
+        "transform",
+        "cognitive"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "vorticog",
+      "source": "plugins/vorticog",
+      "description": "Develop, extend, and operate Vorticog \u2014 an agentic business simulation game engine with DreamCog AI storytelling integra",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "skill"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
       "license": "MIT"
     }
   ]

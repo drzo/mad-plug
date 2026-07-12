@@ -1,0 +1,15 @@
+{
+  "name": "pro-to-com-is-exe",
+  "version": "0.1.0",
+  "description": "Protocol-to-Command-is-Executable. An advanced legal case analysis skill using an integrated Promise-Lambda Attention (Q",
+  "category": "skill-engineering",
+  "tags": [
+    "skill",
+    "attention"
+  ],
+  "dependencies": [],
+  "tools": [
+    "pro_to_com_is_exe_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

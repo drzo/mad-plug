@@ -1,0 +1,14 @@
+{
+  "name": "get-shit-done",
+  "version": "0.1.0",
+  "description": "Meta-prompting, context engineering, and spec-driven development system for Claude Code, OpenCode, and Gemini CLI. Use w",
+  "category": "code-generation",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "get_shit_done_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

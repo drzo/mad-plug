@@ -1,0 +1,17 @@
+{
+  "name": "plan9-devcontainer",
+  "version": "0.1.0",
+  "description": "Optimal devcontainer configuration for Plan 9 from Bell Labs / 9front development. Use when setting up Plan 9 developmen",
+  "category": "skill-engineering",
+  "tags": [
+    "transform",
+    "distributed",
+    "plan9",
+    "inferno"
+  ],
+  "dependencies": [],
+  "tools": [
+    "plan9_devcontainer_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

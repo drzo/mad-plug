@@ -1,0 +1,16 @@
+{
+  "name": "npu",
+  "version": "0.1.0",
+  "description": "Build and operate Neural Processing Unit virtual hardware abstractions for LLM integration. Use when modeling LLM infere",
+  "category": "skill-engineering",
+  "tags": [
+    "transform",
+    "cognitive",
+    "inference"
+  ],
+  "dependencies": [],
+  "tools": [
+    "npu_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

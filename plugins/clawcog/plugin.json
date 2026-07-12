@@ -1,0 +1,16 @@
+{
+  "name": "clawcog",
+  "version": "0.1.0",
+  "description": "Develop, configure, extend, and operate OpenCog (clawcog) \u2014 a personal AI assistant gateway with multi-channel messaging",
+  "category": "skill-engineering",
+  "tags": [
+    "skill",
+    "cognitive",
+    "opencog"
+  ],
+  "dependencies": [],
+  "tools": [
+    "clawcog_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

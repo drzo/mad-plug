@@ -1,0 +1,14 @@
+{
+  "name": "vorticog",
+  "version": "0.1.0",
+  "description": "Develop, extend, and operate Vorticog \u2014 an agentic business simulation game engine with DreamCog AI storytelling integra",
+  "category": "skill-engineering",
+  "tags": [
+    "skill"
+  ],
+  "dependencies": [],
+  "tools": [
+    "vorticog_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

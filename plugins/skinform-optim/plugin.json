@@ -1,0 +1,17 @@
+{
+  "name": "skinform-optim",
+  "version": "0.1.0",
+  "description": "Generate maximally effective skincare formulations using neural hypergraph embeddings and constraint optimization. Use f",
+  "category": "pattern-recognition",
+  "tags": [
+    "graph",
+    "optimization",
+    "formulation",
+    "hypergraph"
+  ],
+  "dependencies": [],
+  "tools": [
+    "skinform_optim_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

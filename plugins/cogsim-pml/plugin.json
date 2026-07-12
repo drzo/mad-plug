@@ -1,0 +1,14 @@
+{
+  "name": "cogsim-pml",
+  "version": "0.1.0",
+  "description": "Build process-centric discrete event simulations using CogSim's Process Modeling Library (PML). Use for queueing systems",
+  "category": "code-generation",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "cogsim_pml_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

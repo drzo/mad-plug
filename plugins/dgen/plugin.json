@@ -1,0 +1,14 @@
+{
+  "name": "dgen",
+  "version": "0.1.0",
+  "description": "Integrates with the DreamGen (dgen) API for advanced creative writing and role-playing. Use for story generation, charac",
+  "category": "cognitive-computing",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "dgen_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

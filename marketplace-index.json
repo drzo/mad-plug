@@ -1,54 +1,124 @@
 {
   "categories": [
     {
-      "id": "pattern-recognition",
-      "name": "Pattern Recognition & Navigation",
-      "description": "Tools for querying, traversing, and transforming the APL253 pattern topology mapped to GitHub and software domains.",
-      "plugins": ["pattern-navigator"]
-    },
-    {
-      "id": "skill-engineering",
-      "name": "Skill Engineering",
-      "description": "Tools for decomposing, transforming, composing, and sharing skills across domains using structural analogy and the General Relevance Transform.",
-      "plugins": ["skill-composer"]
-    },
-    {
       "id": "code-generation",
       "name": "Code Generation & Scaffolding",
-      "description": "Tools for generating project scaffolds, skill stubs, extensions, and opinionated web application stacks.",
-      "plugins": ["template-generator", "spark"]
+      "description": "Tools for generating project scaffolds, skill stubs, extensions, and specialized implementations from specifications.",
+      "plugins": [
+        "agent-toga",
+        "agent-zero",
+        "cogsim-pml",
+        "get-shit-done",
+        "ggml-spec",
+        "harmonic-ggml",
+        "harmonic-llm",
+        "harmonic-resonance-esn",
+        "koboldcpp",
+        "multiplatform-api-weaver",
+        "nn",
+        "scm-des",
+        "spark",
+        "template-generator",
+        "time-crystal-daemon",
+        "time-crystal-nn"
+      ]
+    },
+    {
+      "id": "cognitive-computing",
+      "name": "Cognitive Computing",
+      "description": "Tools for building and operating cognitive development kernels, attention mechanisms, and distributed inference systems.",
+      "plugins": [
+        "cognitive-kernel",
+        "dgen",
+        "ec9o",
+        "marduk-persona",
+        "plan9-file-server",
+        "promise-lambda-attention",
+        "regimorg",
+        "time-crystal-neuron"
+      ]
     },
     {
       "id": "language-design",
       "name": "Language Design & DSLs",
       "description": "Tools for designing and building domain-specific languages including grammar definitions, parsers, lexicon extraction, and validation.",
-      "plugins": ["language-creator"]
+      "plugins": [
+        "language-creator"
+      ]
     },
     {
-      "id": "cognitive-computing",
-      "name": "Cognitive Computing",
-      "description": "Tools for building and operating cognitive development kernels based on Plan 9, Inferno-OS, and OpenCog architectures.",
-      "plugins": ["cognitive-kernel"]
+      "id": "pattern-recognition",
+      "name": "Pattern Recognition & Navigation",
+      "description": "Tools for querying, traversing, and transforming pattern topologies including hypergraphs, gauge networks, and architectural structures.",
+      "plugins": [
+        "apl253",
+        "gauge-hypergraph-network",
+        "gh253",
+        "hypergauge-orbifold",
+        "llama-cpp-spec",
+        "magic-patterns",
+        "neuro-nn",
+        "o9c",
+        "opencog-inferno-kernel",
+        "pattern-navigator",
+        "pie-nn",
+        "reservoirpy-nodes",
+        "skill-infinity",
+        "skill-nn",
+        "skinform-optim",
+        "sys-n",
+        "tc",
+        "topology-weaver",
+        "unicorn-dynamics"
+      ]
     },
     {
       "id": "scientific-computing",
       "name": "Scientific & Mathematical Computing",
       "description": "Tools for analyzing formulations, generating neural network topologies, modeling brain-inspired computation, and numerical analysis.",
-      "plugins": ["formulation-analyzer"]
+      "plugins": [
+        "formulation-analyzer",
+        "skinform"
+      ]
+    },
+    {
+      "id": "skill-engineering",
+      "name": "Skill Engineering",
+      "description": "Tools for decomposing, transforming, composing, and sharing skills across domains using structural analogy and the General Relevance Transform.",
+      "plugins": [
+        "clawcog",
+        "codex-grassmania",
+        "function-creator",
+        "general-relevance-transform",
+        "inferno-devcontainer",
+        "manuscog-cognitive-devkernel",
+        "npu",
+        "plan9-cognitive-devkernel",
+        "plan9-devcontainer",
+        "pro-to-com-is-exe",
+        "skill-composer",
+        "vorticog"
+      ]
     }
   ],
   "tags": [
     "analogy",
+    "attention",
     "brain-model",
+    "cognitive",
+    "cognitive-computing",
     "composition",
     "distributed",
     "dsl",
     "extension",
     "formulation",
+    "gauge",
     "generator",
     "grammar",
     "graph",
+    "hypergraph",
     "inference",
+    "inferno",
     "kernel",
     "language",
     "mathematics",
@@ -56,6 +126,7 @@
     "neural-network",
     "opencog",
     "optimization",
+    "orbifold",
     "parser",
     "pattern",
     "plan9",

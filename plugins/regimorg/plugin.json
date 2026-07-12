@@ -1,0 +1,14 @@
+{
+  "name": "regimorg",
+  "version": "0.1.0",
+  "description": "RegimA skincare expertise with Zone Concept framework. Use for skincare consultations, product recommendations based on ",
+  "category": "cognitive-computing",
+  "tags": [
+    "cognitive-computing"
+  ],
+  "dependencies": [],
+  "tools": [
+    "regimorg_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

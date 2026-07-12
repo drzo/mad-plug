@@ -1,0 +1,16 @@
+{
+  "name": "gh253",
+  "version": "0.1.0",
+  "description": "A Pattern Language for GitHub - 253 interconnected patterns for designing enterprises, organisations, and repositories. ",
+  "category": "pattern-recognition",
+  "tags": [
+    "pattern",
+    "language",
+    "optimization"
+  ],
+  "dependencies": [],
+  "tools": [
+    "gh253_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "skinform",
+  "version": "0.1.0",
+  "description": "AI-powered skincare formulation assistant with virtual chemical reaction simulation. Use for creating cosmetic formulati",
+  "category": "scientific-computing",
+  "tags": [
+    "formulation"
+  ],
+  "dependencies": [],
+  "tools": [
+    "skinform_guide"
+  ],
+  "entrypoint": "extension.mjs"
+}
