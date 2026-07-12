@@ -1,6 +1,6 @@
 {
   "goal_id": "marketplace-enrichment-v1",
-  "status": "complete",
+  "status": "completed",
   "iteration": 2,
   "builder_model": "Claude:Sonnet-4.6",
   "inspector_model": "Claude:Haiku-4.5",
