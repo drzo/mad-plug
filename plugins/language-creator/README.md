@@ -64,6 +64,20 @@ None
 
 ---
 
+## Version
+
+0.1.0
+
+---
+
+## Category & Tags
+
+Category: `language-design`
+
+Tags: `dsl` `grammar` `parser` `language`
+
+---
+
 ## Scripts
 
 Python scripts:

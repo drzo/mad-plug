@@ -64,6 +64,20 @@ None
 
 ---
 
+## Version
+
+0.1.0
+
+---
+
+## Category & Tags
+
+Category: `code-generation`
+
+Tags: `scaffold` `template` `generator` `extension`
+
+---
+
 ## Scripts
 
 Shell scripts in `scripts/`:

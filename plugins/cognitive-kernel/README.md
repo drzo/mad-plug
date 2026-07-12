@@ -76,6 +76,20 @@ None
 
 ---
 
+## Version
+
+0.1.0
+
+---
+
+## Category & Tags
+
+Category: `cognitive-computing`
+
+Tags: `kernel` `plan9` `distributed` `inference` `opencog`
+
+---
+
 ## Scripts
 
 Python scripts in `scripts/`:

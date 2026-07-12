@@ -71,6 +71,20 @@ None
 
 ---
 
+## Version
+
+0.1.0
+
+---
+
+## Category & Tags
+
+Category: `scientific-computing`
+
+Tags: `formulation` `neural-network` `brain-model` `optimization` `mathematics`
+
+---
+
 ## Scripts
 
 Python scripts in `scripts/`:
