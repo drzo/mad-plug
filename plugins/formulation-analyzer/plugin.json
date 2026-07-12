@@ -1,0 +1,17 @@
+{
+  "name": "formulation-analyzer",
+  "version": "0.1.0",
+  "description": "Analyze and optimize formulations — skincare compounds, neural network topologies, brain models, and mathematical constructs.",
+  "category": "scientific-computing",
+  "tags": ["formulation", "neural-network", "brain-model", "optimization", "mathematics"],
+  "dependencies": [],
+  "tools": [
+    "formulation_analyze",
+    "formulation_optimize",
+    "formulation_lookup_ingredient",
+    "formulation_generate_topology",
+    "formulation_brain_model",
+    "formulation_continued_fractions"
+  ],
+  "entrypoint": "extension.mjs"
+}

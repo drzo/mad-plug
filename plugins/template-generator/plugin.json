@@ -1,0 +1,10 @@
+{
+  "name": "template-generator",
+  "version": "0.1.0",
+  "description": "Scaffold new skills, extensions, and projects from curated templates covering Lua/nn, Plan 9, WASM, and more.",
+  "category": "code-generation",
+  "tags": ["scaffold", "template", "generator", "extension"],
+  "dependencies": [],
+  "tools": ["template_new_skill", "template_new_extension"],
+  "entrypoint": "extension.mjs"
+}

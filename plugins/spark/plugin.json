@@ -1,0 +1,10 @@
+{
+  "name": "spark",
+  "version": "0.1.0",
+  "description": "Comprehensive guidance for building modern web applications with opinionated defaults for tech stack, design system, and code standards.",
+  "category": "code-generation",
+  "tags": ["web", "react", "vite", "typescript", "scaffold", "stack"],
+  "dependencies": [],
+  "tools": ["spark_get_stack", "spark_list_stacks", "spark_get_reference"],
+  "entrypoint": "extension.mjs"
+}

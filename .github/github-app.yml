@@ -1,0 +1,4 @@
+instructions: perform the next iteration of enrichment & refinement toward optimal cognitive grip as a plugin marketplace for the gh copilot app
+automation:
+  auto_issue_session: true
+  remote_control: true

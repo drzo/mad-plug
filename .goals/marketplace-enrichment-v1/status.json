@@ -1,0 +1,10 @@
+{
+  "goal_id": "marketplace-enrichment-v1",
+  "status": "building",
+  "iteration": 1,
+  "builder_model": "Claude:Sonnet-4.6",
+  "inspector_model": "Claude:Haiku-4.5",
+  "initial_sha": "facdcdade4ba04cfbc67fdbb7e978ed7bf769a62",
+  "created_at": "2026-07-12T07:54:00+02:00",
+  "history": []
+}

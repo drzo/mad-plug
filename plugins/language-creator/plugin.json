@@ -1,0 +1,10 @@
+{
+  "name": "language-creator",
+  "version": "0.1.0",
+  "description": "Design and create domain-specific languages with grammar definitions, parsers, lexicon extraction, and validation.",
+  "category": "language-design",
+  "tags": ["dsl", "grammar", "parser", "language"],
+  "dependencies": [],
+  "tools": ["dsl_init_language", "dsl_define_grammar", "dsl_emit_grammar", "dsl_extract_lexicon", "dsl_validate"],
+  "entrypoint": "extension.mjs"
+}

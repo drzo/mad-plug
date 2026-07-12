@@ -1,6 +1,81 @@
-# Spark
+# spark
 
 Comprehensive guidance for building modern web applications with opinionated defaults for tech stack, design system, and code standards.
+
+**Version:** 0.1.0 | **Category:** Code Generation & Scaffolding | **Tags:** `web` `react` `vite` `typescript` `scaffold` `stack`
+
+---
+
+## Description
+
+`spark` provides structured, opinionated guidance for bootstrapping modern web applications. It curates a pre-vetted technology stack (Vite, React 19+, TypeScript, Tailwind CSS v4+, shadcn/ui, TanStack Router & Query) and matches it to four complexity tiers. The plugin also exposes reference material for design systems, typography pairings, OKLCH color palettes, component patterns, and performance checklists.
+
+---
+
+## Tools
+
+| Tool | Description | Required Parameters |
+|---|---|---|
+| `spark_get_stack` | Get the full stack specification for a complexity tier | `stack` |
+| `spark_list_stacks` | List all available stack variations with brief descriptions | — |
+| `spark_get_reference` | Retrieve a reference document (design system, colors, etc.) | `reference` |
+
+### `spark_get_stack` stack tiers
+
+| Value | Use Case |
+|---|---|
+| `default-webapp` | General-purpose tools, utilities, MVPs, prototypes |
+| `content-showcase` | Marketing sites, portfolios, blogs, documentation |
+| `data-dashboard` | Analytics dashboards, admin panels, BI tools |
+| `complex-application` | SaaS platforms, enterprise tools, multi-view apps |
+
+### `spark_get_reference` documents
+
+| Value | Description |
+|---|---|
+| `design-system` | Design philosophy, spatial composition, micro-interactions |
+| `typography-pairings` | Distinctive font combinations with personality guidance |
+| `color-palettes` | Pre-curated OKLCH palettes with WCAG validation |
+| `component-patterns` | Common shadcn compositions and usage patterns |
+| `performance-checklist` | Web Vitals optimization, React Compiler setup |
+| `prd-template` | Simplified planning framework for new apps |
+| `radix-migration-guide` | Base UI migration path for Radix concerns |
+
+---
+
+## Usage Examples
+
+### Get the default web app stack
+```
+spark_get_stack(stack="default-webapp")
+```
+Returns the full technology specification, package list, configuration templates, and design guidance for a general-purpose web application.
+
+### Get the data dashboard stack
+```
+spark_get_stack(stack="data-dashboard")
+```
+Returns the dashboard-optimized stack with Recharts and date-fns additions, plus data-density design guidance.
+
+### List all available stacks
+```
+spark_list_stacks()
+```
+Returns a summary of all four complexity tiers with one-line descriptions.
+
+### Get the design system reference
+```
+spark_get_reference(reference="design-system")
+```
+Returns the comprehensive design philosophy document covering spatial composition, backgrounds, and micro-interactions.
+
+---
+
+## Dependencies
+
+None
+
+---
 
 ## What it does
 
