@@ -285,6 +285,8 @@ For detailed guide templates and facilitation scripts:
 - `references/grove-guides.md` - Complete Grove Graphic Guides templates
 - `references/t-system.md` - T-System transformation details
 - `references/team-performance.md` - Drexler/Sibbet assessment tools
+- `references/ksm-optimization.md` - KSM 12-step mapping used by the marketplace-optimizer plugin
+- `references/alexander-metrics.md` - The 15 properties as measurable marketplace metrics
 
 For integration scripts:
 - `scripts/session-planner.py` - Generate session agendas from objectives
