@@ -455,6 +455,24 @@
       "license": "MIT"
     },
     {
+      "name": "marketplace-optimizer",
+      "source": "plugins/marketplace-optimizer",
+      "description": "Optimize marketplace plugins and skills over KSM cycles guided by Alexander wholeness metrics.",
+      "version": "0.1.0",
+      "category": "skill-engineering",
+      "tags": [
+        "optimization",
+        "metric",
+        "pattern",
+        "ksm"
+      ],
+      "author": {
+        "name": "drzo",
+        "url": "https://github.com/drzo"
+      },
+      "license": "MIT"
+    },
+    {
       "name": "multiplatform-api-weaver",
       "source": "plugins/multiplatform-api-weaver",
       "description": "Guide for integrating multiple platform APIs into unified CLI-like hybrid applications and SDKs. Use when building apps ",
