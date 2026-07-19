@@ -1,12 +1,19 @@
 {
   "name": "koboldcpp",
   "version": "0.1.0",
-  "description": "Build applications with KoboldCpp LLM inference engine. Use for local GGUF model deployment, OpenAI-compatible API integ",
+  "description": "Configure and operate KoboldCpp for local LLM inference with GGML model loading and API serving.",
   "category": "code-generation",
   "tags": [
-    "inference"
+    "inference",
+    "neural-network",
+    "optimization"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "ggml-spec",
+    "llama-cpp-spec",
+    "harmonic-llm"
+  ],
   "tools": [
     "koboldcpp_guide"
   ],

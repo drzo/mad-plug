@@ -1,10 +1,26 @@
 {
   "name": "cognitive-kernel",
   "version": "0.1.0",
-  "description": "Build and operate cognitive development kernels — Plan 9, Inferno-OS, and OpenCog-based distributed inference systems.",
+  "description": "Build and operate cognitive development kernels on Plan 9, Inferno-OS, and OpenCog distributed inference.",
   "category": "cognitive-computing",
-  "tags": ["kernel", "plan9", "distributed", "inference", "opencog"],
+  "tags": [
+    "kernel",
+    "plan9",
+    "inferno",
+    "distributed",
+    "inference"
+  ],
   "dependencies": [],
-  "tools": ["cogkernel_build", "cogkernel_distributed_inference", "cogkernel_cluster", "cogkernel_daemon"],
+  "relatedPlugins": [
+    "plan9-cognitive-devkernel",
+    "plan9-file-server",
+    "opencog-inferno-kernel"
+  ],
+  "tools": [
+    "cogkernel_build",
+    "cogkernel_distributed_inference",
+    "cogkernel_cluster",
+    "cogkernel_daemon"
+  ],
   "entrypoint": "extension.mjs"
 }

@@ -1,16 +1,21 @@
 {
   "name": "inferno-devcontainer",
   "version": "0.1.0",
-  "description": "Optimal devcontainer configuration for Inferno-OS cognitive kernel development. Use when setting up Inferno-OS developme",
+  "description": "Configure Inferno-OS development containers with cognitive namespace integration and build toolchains.",
   "category": "skill-engineering",
   "tags": [
-    "transform",
-    "cognitive",
+    "inferno",
     "kernel",
-    "distributed",
-    "opencog"
+    "cognitive",
+    "distributed"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "cognitive-kernel"
+  ],
+  "relatedPlugins": [
+    "plan9-devcontainer",
+    "opencog-inferno-kernel"
+  ],
   "tools": [
     "inferno_devcontainer_guide"
   ],

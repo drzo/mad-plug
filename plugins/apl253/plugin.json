@@ -1,14 +1,20 @@
 {
   "name": "apl253",
   "version": "0.1.0",
-  "description": "Christopher Alexander's \"A Pattern Language\" (253 patterns) for design across domains. Use for pattern-based design thin",
+  "description": "Query and navigate Christopher Alexander's 253 patterns for pattern-based design thinking across domains.",
   "category": "pattern-recognition",
   "tags": [
     "pattern",
-    "transform",
-    "language"
+    "topology",
+    "language",
+    "navigation"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "gh253",
+    "pattern-navigator",
+    "magic-patterns"
+  ],
   "tools": [
     "apl253_guide"
   ],

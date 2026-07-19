@@ -1,12 +1,19 @@
 {
   "name": "time-crystal-nn",
   "version": "0.1.0",
-  "description": "Build time crystal neural networks with Torch7 nn modules. Use for implementing hierarchical oscillatory architectures b",
+  "description": "Build neural networks with time crystal temporal symmetry for phase-coherent sequence processing.",
   "category": "code-generation",
   "tags": [
-    "neural-network"
+    "neural-network",
+    "cognitive",
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "time-crystal-neuron",
+    "time-crystal-daemon",
+    "tc"
+  ],
   "tools": [
     "time_crystal_nn_guide"
   ],

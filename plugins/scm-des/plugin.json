@@ -1,12 +1,18 @@
 {
   "name": "scm-des",
   "version": "0.1.0",
-  "description": "Build discrete event simulations for supply chain management using CogSim PML. Use for modeling multi-actor supply chain",
+  "description": "Build discrete event simulations in Scheme with cognitive modeling primitives and temporal scheduling.",
   "category": "code-generation",
   "tags": [
-    "cognitive-computing"
+    "simulation",
+    "cognitive",
+    "generator"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "cogsim-pml",
+    "reservoirpy-nodes"
+  ],
   "tools": [
     "scm_des_guide"
   ],

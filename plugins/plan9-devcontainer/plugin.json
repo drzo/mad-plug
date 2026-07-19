@@ -1,15 +1,20 @@
 {
   "name": "plan9-devcontainer",
   "version": "0.1.0",
-  "description": "Optimal devcontainer configuration for Plan 9 from Bell Labs / 9front development. Use when setting up Plan 9 developmen",
+  "description": "Configure Plan 9 development containers with cross-compilation toolchains and namespace mounting.",
   "category": "skill-engineering",
   "tags": [
-    "transform",
-    "distributed",
     "plan9",
-    "inferno"
+    "kernel",
+    "distributed"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "cognitive-kernel"
+  ],
+  "relatedPlugins": [
+    "plan9-cognitive-devkernel",
+    "inferno-devcontainer"
+  ],
   "tools": [
     "plan9_devcontainer_guide"
   ],

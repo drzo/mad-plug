@@ -1,10 +1,25 @@
 {
   "name": "spark",
   "version": "0.1.0",
-  "description": "Comprehensive guidance for building modern web applications with opinionated defaults for tech stack, design system, and code standards.",
+  "description": "Generate opinionated modern web application stacks with React, Vite, TypeScript, and design system guidance.",
   "category": "code-generation",
-  "tags": ["web", "react", "vite", "typescript", "scaffold", "stack"],
+  "tags": [
+    "web",
+    "scaffold",
+    "typescript",
+    "generator",
+    "stack"
+  ],
   "dependencies": [],
-  "tools": ["spark_get_stack", "spark_list_stacks", "spark_get_reference"],
+  "relatedPlugins": [
+    "get-shit-done",
+    "template-generator",
+    "multiplatform-api-weaver"
+  ],
+  "tools": [
+    "spark_get_stack",
+    "spark_list_stacks",
+    "spark_get_reference"
+  ],
   "entrypoint": "extension.mjs"
 }

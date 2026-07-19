@@ -1,12 +1,19 @@
 {
   "name": "regimorg",
   "version": "0.1.0",
-  "description": "RegimA skincare expertise with Zone Concept framework. Use for skincare consultations, product recommendations based on ",
+  "description": "Organize and restructure cognitive agent registries with hierarchical governance and lifecycle management.",
   "category": "cognitive-computing",
   "tags": [
-    "cognitive-computing"
+    "cognitive",
+    "agent",
+    "skill"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "o9c",
+    "clawcog",
+    "marketplace-optimizer"
+  ],
   "tools": [
     "regimorg_guide"
   ],

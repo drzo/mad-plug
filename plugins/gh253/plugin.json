@@ -1,14 +1,20 @@
 {
   "name": "gh253",
   "version": "0.1.0",
-  "description": "A Pattern Language for GitHub - 253 interconnected patterns for designing enterprises, organisations, and repositories. ",
+  "description": "Map Christopher Alexander's 253 patterns to GitHub and software engineering domains for design navigation.",
   "category": "pattern-recognition",
   "tags": [
     "pattern",
-    "language",
-    "optimization"
+    "topology",
+    "navigation",
+    "graph"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "apl253",
+    "pattern-navigator",
+    "magic-patterns"
+  ],
   "tools": [
     "gh253_guide"
   ],

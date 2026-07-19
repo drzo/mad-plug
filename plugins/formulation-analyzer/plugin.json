@@ -1,10 +1,20 @@
 {
   "name": "formulation-analyzer",
   "version": "0.1.0",
-  "description": "Analyze and optimize formulations — skincare compounds, neural network topologies, brain models, and mathematical constructs.",
+  "description": "Analyze and optimize formulations — skincare compounds, neural topologies, brain models, and mathematical constructs.",
   "category": "scientific-computing",
-  "tags": ["formulation", "neural-network", "brain-model", "optimization", "mathematics"],
+  "tags": [
+    "formulation",
+    "neural-network",
+    "brain-model",
+    "optimization",
+    "mathematics"
+  ],
   "dependencies": [],
+  "relatedPlugins": [
+    "skinform",
+    "skinform-optim"
+  ],
   "tools": [
     "formulation_analyze",
     "formulation_optimize",

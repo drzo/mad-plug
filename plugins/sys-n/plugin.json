@@ -1,12 +1,19 @@
 {
   "name": "sys-n",
   "version": "0.1.0",
-  "description": "Deterministic state transition modeling framework for System n architectures. Use when modeling cyclic state machines wi",
+  "description": "Model system-level neural architectures for hardware-software co-design of cognitive processing pipelines.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern"
+    "neural-network",
+    "cognitive",
+    "inference"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "npu",
+    "neuro-nn",
+    "cognitive-kernel"
+  ],
   "tools": [
     "sys_n_guide"
   ],

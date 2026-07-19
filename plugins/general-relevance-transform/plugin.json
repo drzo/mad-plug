@@ -1,14 +1,20 @@
 {
   "name": "general-relevance-transform",
   "version": "0.1.0",
-  "description": "A unifying framework for applying the General Relevance architecture to any domain of inquiry. Use this skill to transfo",
+  "description": "Apply the General Relevance Transform to map domain structures and skill patterns across arbitrary contexts.",
   "category": "skill-engineering",
   "tags": [
-    "skill",
     "transform",
-    "grammar"
+    "skill",
+    "analogy",
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "skill-composer",
+    "function-creator",
+    "pattern-navigator"
+  ],
   "tools": [
     "general_relevance_transform_guide"
   ],

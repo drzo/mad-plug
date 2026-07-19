@@ -1,14 +1,21 @@
 {
   "name": "codex-grassmania",
   "version": "0.1.0",
-  "description": "Implement CogMorph cognitive state transformation framework and ASSD AtomSpace storage devices. Use when building isomor",
+  "description": "Implement CogMorph cognitive state transformations and ASSD AtomSpace storage for isomorphic skill mapping.",
   "category": "skill-engineering",
   "tags": [
-    "transform",
     "cognitive",
-    "opencog"
+    "opencog",
+    "transform",
+    "skill"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "clawcog"
+  ],
+  "relatedPlugins": [
+    "opencog-inferno-kernel",
+    "skill-composer"
+  ],
   "tools": [
     "codex_grassmania_guide"
   ],

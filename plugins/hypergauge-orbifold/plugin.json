@@ -1,13 +1,21 @@
 {
   "name": "hypergauge-orbifold",
   "version": "0.1.0",
-  "description": "Provides a conceptual framework for understanding and designing neural architectures as Hypergauge Orbifolds. Use when a",
+  "description": "Model orbifold structures within gauge-equivariant hypergraph networks for hierarchical symmetry analysis.",
   "category": "pattern-recognition",
   "tags": [
+    "hypergraph",
     "gauge",
-    "orbifold"
+    "orbifold",
+    "topology"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "gauge-hypergraph-network"
+  ],
+  "relatedPlugins": [
+    "topology-weaver",
+    "skill-infinity"
+  ],
   "tools": [
     "hypergauge_orbifold_guide"
   ],

@@ -1,15 +1,20 @@
 {
   "name": "gauge-hypergraph-network",
   "version": "0.1.0",
-  "description": "Provides a conceptual framework for understanding and designing Gauge-Equivariant Transformers as Federated Hypergraph N",
+  "description": "Design Gauge-Equivariant Transformers as Federated Hypergraph Networks for distributed attention patterns.",
   "category": "pattern-recognition",
   "tags": [
-    "graph",
-    "transform",
+    "hypergraph",
     "gauge",
-    "hypergraph"
+    "transform",
+    "graph"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "hypergauge-orbifold",
+    "topology-weaver",
+    "neuro-nn"
+  ],
   "tools": [
     "gauge_hypergraph_network_guide"
   ],

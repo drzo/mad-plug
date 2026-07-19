@@ -1,15 +1,20 @@
 {
   "name": "time-crystal-daemon",
   "version": "0.1.0",
-  "description": "Build and operate time crystal daemons with LLM interfaces. Use for creating deterministic cognitive services with natur",
+  "description": "Operate time crystal service daemons for persistent temporal computation and periodic state management.",
   "category": "code-generation",
   "tags": [
-    "language",
     "cognitive",
-    "kernel",
-    "opencog"
+    "inference",
+    "distributed"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "time-crystal-nn"
+  ],
+  "relatedPlugins": [
+    "time-crystal-neuron",
+    "tc"
+  ],
   "tools": [
     "time_crystal_daemon_guide"
   ],

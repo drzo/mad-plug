@@ -1,14 +1,20 @@
 {
   "name": "clawcog",
   "version": "0.1.0",
-  "description": "Develop, configure, extend, and operate OpenCog (clawcog) \u2014 a personal AI assistant gateway with multi-channel messaging",
+  "description": "Develop, configure, and operate OpenCog (clawcog) personal AI assistants with multi-channel messaging integration.",
   "category": "skill-engineering",
   "tags": [
-    "skill",
     "cognitive",
-    "opencog"
+    "opencog",
+    "agent",
+    "skill"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "codex-grassmania",
+    "opencog-inferno-kernel",
+    "regimorg"
+  ],
   "tools": [
     "clawcog_guide"
   ],

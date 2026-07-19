@@ -1,12 +1,19 @@
 {
   "name": "agent-zero",
   "version": "0.1.0",
-  "description": "Build and extend Agent Zero autonomous AI agents. Use for creating custom tools, extensions, prompts, instruments, and a",
+  "description": "Build and extend Agent Zero autonomous AI agents with custom tools, extensions, prompts, and instruments.",
   "category": "code-generation",
   "tags": [
-    "cognitive-computing"
+    "cognitive",
+    "agent",
+    "extension"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "agent-toga",
+    "marduk-persona",
+    "get-shit-done"
+  ],
   "tools": [
     "agent_zero_guide"
   ],

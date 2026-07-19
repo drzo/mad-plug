@@ -1,15 +1,19 @@
 {
   "name": "unicorn-dynamics",
   "version": "0.1.0",
-  "description": "Strategic visual planning and operational intelligence using the Unicorn Dynamics framework. Use for organizational visi",
+  "description": "Model unicorn dynamics in complex adaptive systems for emergence analysis and nonlinear evolution patterns.",
   "category": "pattern-recognition",
   "tags": [
+    "cognitive",
     "pattern",
-    "graph",
-    "transform",
-    "cognitive"
+    "mathematics"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "vorticog",
+    "ec9o",
+    "promise-lambda-attention"
+  ],
   "tools": [
     "unicorn_dynamics_guide"
   ],

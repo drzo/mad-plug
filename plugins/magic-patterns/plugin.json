@@ -1,13 +1,19 @@
 {
   "name": "magic-patterns",
   "version": "0.1.0",
-  "description": "Generate UI components from natural language using Magic Patterns. Use when creating React/HTML components, prototyping ",
+  "description": "Discover and apply recurring design patterns across codebases using structural similarity matching.",
   "category": "pattern-recognition",
   "tags": [
     "pattern",
-    "language"
+    "navigation",
+    "graph"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "pattern-navigator",
+    "apl253",
+    "gh253"
+  ],
   "tools": [
     "magic_patterns_guide"
   ],

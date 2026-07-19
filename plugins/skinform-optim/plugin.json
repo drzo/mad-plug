@@ -1,15 +1,20 @@
 {
   "name": "skinform-optim",
   "version": "0.1.0",
-  "description": "Generate maximally effective skincare formulations using neural hypergraph embeddings and constraint optimization. Use f",
+  "description": "Optimize skincare formulations using neural hypergraph embeddings and multi-objective constraint solving.",
   "category": "pattern-recognition",
   "tags": [
-    "graph",
-    "optimization",
     "formulation",
-    "hypergraph"
+    "hypergraph",
+    "optimization"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "skinform"
+  ],
+  "relatedPlugins": [
+    "formulation-analyzer",
+    "gauge-hypergraph-network"
+  ],
   "tools": [
     "skinform_optim_guide"
   ],

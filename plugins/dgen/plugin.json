@@ -1,12 +1,19 @@
 {
   "name": "dgen",
   "version": "0.1.0",
-  "description": "Integrates with the DreamGen (dgen) API for advanced creative writing and role-playing. Use for story generation, charac",
+  "description": "Integrate with the DreamGen API for advanced creative writing, role-playing, and character-driven generation.",
   "category": "cognitive-computing",
   "tags": [
-    "cognitive-computing"
+    "cognitive",
+    "generator",
+    "inference"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "marduk-persona",
+    "ec9o",
+    "harmonic-llm"
+  ],
   "tools": [
     "dgen_guide"
   ],

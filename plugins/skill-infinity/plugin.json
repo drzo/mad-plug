@@ -1,16 +1,20 @@
 {
   "name": "skill-infinity",
   "version": "0.1.0",
-  "description": "The cognitive kernel \u2014 a self-referential, self-improving skill architecture derived as the fixed point of applying neur",
+  "description": "Explore the self-referential skill fixed-point architecture for recursive cognitive capability composition.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern",
     "skill",
     "composition",
     "cognitive",
-    "kernel"
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "skill-composer",
+    "skill-nn",
+    "hypergauge-orbifold"
+  ],
   "tools": [
     "skill_infinity_guide"
   ],

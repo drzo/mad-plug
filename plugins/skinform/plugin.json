@@ -1,12 +1,18 @@
 {
   "name": "skinform",
   "version": "0.1.0",
-  "description": "AI-powered skincare formulation assistant with virtual chemical reaction simulation. Use for creating cosmetic formulati",
+  "description": "Create professional skincare formulations using AI-driven chemical reaction simulation and COSING patterns.",
   "category": "scientific-computing",
   "tags": [
-    "formulation"
+    "formulation",
+    "optimization",
+    "mathematics"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "formulation-analyzer",
+    "skinform-optim"
+  ],
   "tools": [
     "skinform_guide"
   ],

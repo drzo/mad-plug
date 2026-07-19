@@ -1,16 +1,19 @@
 {
   "name": "o9c",
   "version": "0.1.0",
-  "description": "A self-referential cognitive kernel synthesized from the recursive composition of sys-n, hypergauge-orbifold, and marduk",
+  "description": "Operate the o9c cognitive orchestration framework for multi-agent coordination and task decomposition.",
   "category": "pattern-recognition",
   "tags": [
-    "skill",
-    "composition",
     "cognitive",
-    "kernel",
-    "gauge"
+    "agent",
+    "distributed"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "regimorg",
+    "ec9o",
+    "cognitive-kernel"
+  ],
   "tools": [
     "o9c_guide"
   ],

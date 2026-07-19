@@ -1,12 +1,19 @@
 {
   "name": "reservoirpy-nodes",
   "version": "0.1.0",
-  "description": "Create custom ReservoirPy nodes for reservoir computing architectures. Use when implementing custom neural operators, tr",
+  "description": "Build reservoir computing networks using ReservoirPy node configurations for temporal pattern recognition.",
   "category": "pattern-recognition",
   "tags": [
-    "graph"
+    "neural-network",
+    "pattern",
+    "inference"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "harmonic-resonance-esn",
+    "neuro-nn",
+    "cogsim-pml"
+  ],
   "tools": [
     "reservoirpy_nodes_guide"
   ],
