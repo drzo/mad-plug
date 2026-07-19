@@ -12,7 +12,6 @@
     "skinform"
   ],
   "relatedPlugins": [
-    "skinform",
     "formulation-analyzer",
     "gauge-hypergraph-network"
   ],

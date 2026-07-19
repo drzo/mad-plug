@@ -14,8 +14,6 @@
     "gh253"
   ],
   "relatedPlugins": [
-    "apl253",
-    "gh253",
     "marketplace-optimizer"
   ],
   "tools": [

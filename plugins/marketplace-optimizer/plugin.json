@@ -13,7 +13,6 @@
     "pattern-navigator"
   ],
   "relatedPlugins": [
-    "pattern-navigator",
     "skill-composer",
     "apl253"
   ],

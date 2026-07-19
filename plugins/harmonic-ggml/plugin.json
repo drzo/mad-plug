@@ -13,7 +13,6 @@
     "ggml-spec"
   ],
   "relatedPlugins": [
-    "ggml-spec",
     "harmonic-llm",
     "harmonic-resonance-esn"
   ],

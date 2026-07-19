@@ -13,7 +13,6 @@
     "clawcog"
   ],
   "relatedPlugins": [
-    "clawcog",
     "opencog-inferno-kernel",
     "skill-composer"
   ],

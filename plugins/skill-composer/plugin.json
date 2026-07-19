@@ -13,7 +13,6 @@
     "general-relevance-transform"
   ],
   "relatedPlugins": [
-    "general-relevance-transform",
     "function-creator",
     "skill-infinity"
   ],

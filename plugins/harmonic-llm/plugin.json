@@ -13,7 +13,6 @@
     "harmonic-ggml"
   ],
   "relatedPlugins": [
-    "harmonic-ggml",
     "koboldcpp",
     "dgen"
   ],

@@ -12,7 +12,6 @@
     "cognitive-kernel"
   ],
   "relatedPlugins": [
-    "cognitive-kernel",
     "plan9-devcontainer",
     "plan9-file-server"
   ],

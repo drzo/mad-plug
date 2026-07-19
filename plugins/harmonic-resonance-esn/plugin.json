@@ -13,7 +13,6 @@
     "harmonic-ggml"
   ],
   "relatedPlugins": [
-    "harmonic-ggml",
     "reservoirpy-nodes",
     "neuro-nn"
   ],

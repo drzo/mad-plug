@@ -12,7 +12,6 @@
     "cognitive-kernel"
   ],
   "relatedPlugins": [
-    "cognitive-kernel",
     "plan9-cognitive-devkernel",
     "plan9-devcontainer"
   ],

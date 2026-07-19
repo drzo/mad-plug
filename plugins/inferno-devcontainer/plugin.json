@@ -13,7 +13,6 @@
     "cognitive-kernel"
   ],
   "relatedPlugins": [
-    "cognitive-kernel",
     "plan9-devcontainer",
     "opencog-inferno-kernel"
   ],
