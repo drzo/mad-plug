@@ -1,16 +1,21 @@
 {
   "name": "plan9-cognitive-devkernel",
   "version": "0.1.0",
-  "description": "Plan 9 from Bell Labs cognitive development kernel with per-process namespace-based cognitive architecture. Use when set",
+  "description": "Build Plan 9 cognitive development kernels with namespace-driven cognitive service composition.",
   "category": "skill-engineering",
   "tags": [
-    "transform",
-    "cognitive",
+    "plan9",
     "kernel",
-    "distributed",
-    "plan9"
+    "cognitive"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "cognitive-kernel"
+  ],
+  "relatedPlugins": [
+    "cognitive-kernel",
+    "plan9-devcontainer",
+    "plan9-file-server"
+  ],
   "tools": [
     "plan9_cognitive_devkernel_guide"
   ],

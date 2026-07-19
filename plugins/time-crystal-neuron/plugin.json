@@ -1,12 +1,21 @@
 {
   "name": "time-crystal-neuron",
   "version": "0.1.0",
-  "description": "Constructs a time crystal generalized neuron model for a given context, mapping domain concepts to the hierarchical temp",
+  "description": "Construct time crystal generalized neuron models mapping domain concepts to hierarchical temporal dynamics.",
   "category": "cognitive-computing",
   "tags": [
-    "cognitive-computing"
+    "cognitive",
+    "neural-network",
+    "pattern"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "time-crystal-nn"
+  ],
+  "relatedPlugins": [
+    "time-crystal-nn",
+    "time-crystal-daemon",
+    "tc"
+  ],
   "tools": [
     "time_crystal_neuron_guide"
   ],

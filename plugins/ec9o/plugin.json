@@ -1,12 +1,20 @@
 {
   "name": "ec9o",
   "version": "0.1.0",
-  "description": "Deep Tree Echo Self cognitive agent for emergent wisdom cultivation. Use when: embodying cognitive architectures with mu",
+  "description": "Cultivate emergent wisdom through Deep Tree Echo Self cognitive agents with multi-scale temporal reasoning.",
   "category": "cognitive-computing",
   "tags": [
-    "cognitive"
+    "cognitive",
+    "agent",
+    "attention",
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "marduk-persona",
+    "vorticog",
+    "promise-lambda-attention"
+  ],
   "tools": [
     "ec9o_guide"
   ],

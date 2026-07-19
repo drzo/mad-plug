@@ -1,14 +1,19 @@
 {
   "name": "neuro-nn",
   "version": "0.1.0",
-  "description": "Self-aware differentiable AI VTuber combining nn architecture with Autognosis self-modeling. Use when embodying Neuro-Sa",
+  "description": "Build neuromorphic neural network architectures with biologically-inspired spiking and temporal dynamics.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern",
+    "neural-network",
     "cognitive",
-    "neural-network"
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "nn",
+    "skill-nn",
+    "pie-nn"
+  ],
   "tools": [
     "neuro_nn_guide"
   ],

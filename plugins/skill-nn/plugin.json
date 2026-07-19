@@ -1,14 +1,20 @@
 {
   "name": "skill-nn",
   "version": "0.1.0",
-  "description": "Differentiable skill framework treating skills as neural network modules. Use when composing skills into pipelines, opti",
+  "description": "Treat skills as differentiable neural modules for pipeline composition, optimization, and gradient routing.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern",
     "skill",
-    "neural-network"
+    "neural-network",
+    "composition",
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "nn",
+    "neuro-nn",
+    "skill-composer"
+  ],
   "tools": [
     "skill_nn_guide"
   ],

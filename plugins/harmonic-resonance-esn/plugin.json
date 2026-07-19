@@ -1,12 +1,22 @@
 {
   "name": "harmonic-resonance-esn",
   "version": "0.1.0",
-  "description": "Create custom ReservoirPy nodes for frequency-domain Echo State Networks (ESNs). Use when building harmonic oscillator r",
+  "description": "Implement Echo State Networks with harmonic resonance dynamics for temporal sequence processing tasks.",
   "category": "code-generation",
   "tags": [
-    "cognitive"
+    "neural-network",
+    "inference",
+    "pattern",
+    "generator"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "harmonic-ggml"
+  ],
+  "relatedPlugins": [
+    "harmonic-ggml",
+    "reservoirpy-nodes",
+    "neuro-nn"
+  ],
   "tools": [
     "harmonic_resonance_esn_guide"
   ],

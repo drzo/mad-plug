@@ -1,14 +1,20 @@
 {
   "name": "function-creator",
   "version": "0.1.0",
-  "description": "Higher-order skill transformation engine that maps existing skills into analogous domains. Use when transforming a skill",
+  "description": "Transform existing skills into analogous domains using higher-order skill mapping and template generation.",
   "category": "skill-engineering",
   "tags": [
     "skill",
     "transform",
-    "template"
+    "template",
+    "generator"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "skill-composer",
+    "general-relevance-transform",
+    "template-generator"
+  ],
   "tools": [
     "function_creator_guide"
   ],

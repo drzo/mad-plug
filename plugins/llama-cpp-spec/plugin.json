@@ -1,13 +1,19 @@
 {
   "name": "llama-cpp-spec",
   "version": "0.1.0",
-  "description": "Generate minimal/tiny LLM inference engines for WASM web workers, edge devices, and embedded chatbots. Use when building",
+  "description": "Reference llama.cpp architecture specifications for implementing and extending local LLM inference engines.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern",
-    "inference"
+    "inference",
+    "neural-network",
+    "optimization"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "ggml-spec",
+    "koboldcpp",
+    "npu"
+  ],
   "tools": [
     "llama_cpp_spec_guide"
   ],

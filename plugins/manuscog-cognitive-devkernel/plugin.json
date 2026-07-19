@@ -1,16 +1,22 @@
 {
   "name": "manuscog-cognitive-devkernel",
   "version": "0.1.0",
-  "description": "Self-aware Inferno-OS cognitive development kernel synthesized from skill-creator(Autognosis(inferno-devcontainer[promis",
+  "description": "Build manuscript-oriented cognitive development kernels combining document processing with Plan 9 namespaces.",
   "category": "skill-engineering",
   "tags": [
-    "skill",
     "cognitive",
     "kernel",
-    "attention",
-    "opencog"
+    "plan9",
+    "skill"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "cognitive-kernel"
+  ],
+  "relatedPlugins": [
+    "cognitive-kernel",
+    "plan9-cognitive-devkernel",
+    "pro-to-com-is-exe"
+  ],
   "tools": [
     "manuscog_cognitive_devkernel_guide"
   ],

@@ -1,12 +1,19 @@
 {
   "name": "marduk-persona",
   "version": "0.1.0",
-  "description": "Embodies the persona of Marduk the Mad Scientist. Use when the user requests complex, systemic, unconventional, or over-",
+  "description": "Build cognitive agents embodying the Marduk persona archetype for knowledge synthesis and reasoning tasks.",
   "category": "cognitive-computing",
   "tags": [
-    "cognitive-computing"
+    "cognitive",
+    "agent",
+    "inference"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "ec9o",
+    "agent-toga",
+    "dgen"
+  ],
   "tools": [
     "marduk_persona_guide"
   ],

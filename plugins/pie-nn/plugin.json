@@ -1,16 +1,19 @@
 {
   "name": "pie-nn",
   "version": "0.1.0",
-  "description": "Generate and operate the PIE-NN cognitive language architecture. Use when creating or interacting with a differentiable ",
+  "description": "Implement Predictive Information Estimation neural networks for mutual information maximization tasks.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern",
-    "skill",
-    "composition",
-    "language",
-    "cognitive"
+    "neural-network",
+    "optimization",
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "neuro-nn",
+    "nn",
+    "skill-nn"
+  ],
   "tools": [
     "pie_nn_guide"
   ],

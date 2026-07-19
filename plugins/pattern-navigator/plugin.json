@@ -1,10 +1,27 @@
 {
   "name": "pattern-navigator",
   "version": "0.1.0",
-  "description": "Navigate and query the GH253 pattern topology — 253 patterns mapped to GitHub/software domains with relationship traversal and domain mapping.",
+  "description": "Navigate and query the GH253 pattern topology with relationship traversal and domain mapping tools.",
   "category": "pattern-recognition",
-  "tags": ["pattern", "topology", "navigation", "graph"],
-  "dependencies": [],
-  "tools": ["pattern_query", "pattern_transform", "pattern_relationships"],
+  "tags": [
+    "pattern",
+    "topology",
+    "navigation",
+    "graph"
+  ],
+  "dependencies": [
+    "apl253",
+    "gh253"
+  ],
+  "relatedPlugins": [
+    "apl253",
+    "gh253",
+    "marketplace-optimizer"
+  ],
+  "tools": [
+    "pattern_query",
+    "pattern_transform",
+    "pattern_relationships"
+  ],
   "entrypoint": "extension.mjs"
 }

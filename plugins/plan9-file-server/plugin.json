@@ -1,15 +1,21 @@
 {
   "name": "plan9-file-server",
   "version": "0.1.0",
-  "description": "Set up a Plan 9 file server cluster with multiple CPU servers, authentication, and cognitive namespace integration. Use ",
+  "description": "Set up Plan 9 file server clusters with authentication, CPU servers, and cognitive namespace integration.",
   "category": "cognitive-computing",
   "tags": [
-    "cognitive",
+    "plan9",
     "kernel",
-    "distributed",
-    "plan9"
+    "distributed"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "cognitive-kernel"
+  ],
+  "relatedPlugins": [
+    "cognitive-kernel",
+    "plan9-cognitive-devkernel",
+    "plan9-devcontainer"
+  ],
   "tools": [
     "plan9_file_server_guide"
   ],

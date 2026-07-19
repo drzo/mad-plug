@@ -1,12 +1,19 @@
 {
   "name": "vorticog",
   "version": "0.1.0",
-  "description": "Develop, extend, and operate Vorticog \u2014 an agentic business simulation game engine with DreamCog AI storytelling integra",
+  "description": "Build vortex-based cognitive architectures with rotational dynamics for attractor-state reasoning patterns.",
   "category": "skill-engineering",
   "tags": [
-    "skill"
+    "cognitive",
+    "pattern",
+    "attention"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "ec9o",
+    "promise-lambda-attention",
+    "unicorn-dynamics"
+  ],
   "tools": [
     "vorticog_guide"
   ],

@@ -1,16 +1,22 @@
 {
   "name": "topology-weaver",
   "version": "0.1.0",
-  "description": "Generate neural network topology specifications using analogous reference terminology from a given conceptual context. U",
+  "description": "Weave topological structures across hypergraph networks for connectivity analysis and path optimization.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern",
     "topology",
-    "transform",
-    "grammar",
-    "neural-network"
+    "hypergraph",
+    "graph",
+    "pattern"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "gauge-hypergraph-network"
+  ],
+  "relatedPlugins": [
+    "gauge-hypergraph-network",
+    "hypergauge-orbifold",
+    "pattern-navigator"
+  ],
   "tools": [
     "topology_weaver_guide"
   ],

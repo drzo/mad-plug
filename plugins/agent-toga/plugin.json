@@ -1,12 +1,19 @@
 {
   "name": "agent-toga",
   "version": "0.1.0",
-  "description": "Build AI agents with Himiko Toga personality for security testing and code analysis. Use for penetration testing assista",
+  "description": "Build AI agents with Himiko Toga personality for security testing, code analysis, and ethical hacking workflows.",
   "category": "code-generation",
   "tags": [
-    "cognitive-computing"
+    "cognitive",
+    "agent",
+    "security"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "agent-zero",
+    "marduk-persona",
+    "ec9o"
+  ],
   "tools": [
     "agent_toga_guide"
   ],

@@ -1,10 +1,28 @@
 {
   "name": "skill-composer",
   "version": "0.1.0",
-  "description": "Decompose, transform, and compose skills across domains using structural analogy and the General Relevance Transform.",
+  "description": "Decompose, transform, and compose skills across domains using structural analogy and the GRT engine.",
   "category": "skill-engineering",
-  "tags": ["skill", "composition", "transform", "analogy"],
-  "dependencies": [],
-  "tools": ["skill_decompose", "skill_transform", "skill_chain_transforms", "skill_apply_grt", "skill_share_template"],
+  "tags": [
+    "skill",
+    "composition",
+    "transform",
+    "analogy"
+  ],
+  "dependencies": [
+    "general-relevance-transform"
+  ],
+  "relatedPlugins": [
+    "general-relevance-transform",
+    "function-creator",
+    "skill-infinity"
+  ],
+  "tools": [
+    "skill_decompose",
+    "skill_transform",
+    "skill_chain_transforms",
+    "skill_apply_grt",
+    "skill_share_template"
+  ],
   "entrypoint": "extension.mjs"
 }

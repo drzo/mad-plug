@@ -1,10 +1,26 @@
 {
   "name": "marketplace-optimizer",
   "version": "0.1.0",
-  "description": "Optimize marketplace plugins and skills over KSM cycles guided by Alexander wholeness metrics.",
+  "description": "Score and optimize marketplace plugins using Alexander wholeness metrics and KSM cycle analysis.",
   "category": "skill-engineering",
-  "tags": ["optimization", "metric", "pattern", "ksm"],
-  "dependencies": [],
-  "tools": ["alexander_score", "ksm_cycle_run", "optimization_report"],
+  "tags": [
+    "optimization",
+    "metric",
+    "pattern",
+    "ksm"
+  ],
+  "dependencies": [
+    "pattern-navigator"
+  ],
+  "relatedPlugins": [
+    "pattern-navigator",
+    "skill-composer",
+    "apl253"
+  ],
+  "tools": [
+    "alexander_score",
+    "ksm_cycle_run",
+    "optimization_report"
+  ],
   "entrypoint": "extension.mjs"
 }

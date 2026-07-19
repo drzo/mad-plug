@@ -1,12 +1,19 @@
 {
   "name": "tc",
   "version": "0.1.0",
-  "description": "Total Commander file management operations: batch rename, search, copy/move, archive pack/unpack, directory tree, and fi",
+  "description": "Build time crystal computational models with discrete temporal symmetry breaking for periodic state evolution.",
   "category": "pattern-recognition",
   "tags": [
+    "cognitive",
+    "neural-network",
     "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "time-crystal-nn",
+    "time-crystal-neuron",
+    "time-crystal-daemon"
+  ],
   "tools": [
     "tc_guide"
   ],

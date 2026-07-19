@@ -1,12 +1,19 @@
 {
   "name": "promise-lambda-attention",
   "version": "0.1.0",
-  "description": "Implements the Promise-Lambda Attention paradigm, a constraint-satisfaction mechanism where a promise (\u03bb) filters a mani",
+  "description": "Implement Promise-Lambda Attention for constraint-satisfaction filtering over manifold-valued embeddings.",
   "category": "cognitive-computing",
   "tags": [
-    "attention"
+    "attention",
+    "cognitive",
+    "pattern"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "ec9o",
+    "vorticog",
+    "gauge-hypergraph-network"
+  ],
   "tools": [
     "promise_lambda_attention_guide"
   ],

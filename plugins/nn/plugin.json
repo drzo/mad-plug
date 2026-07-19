@@ -1,12 +1,19 @@
 {
   "name": "nn",
   "version": "0.1.0",
-  "description": "Build and train neural networks with Torch7's nn package. Use when creating MLPs, CNNs, RNNs, or custom layers in Lua/To",
+  "description": "Scaffold and configure neural network modules for Lua/Torch-style training, inference, and composition.",
   "category": "code-generation",
   "tags": [
-    "neural-network"
+    "neural-network",
+    "generator",
+    "scaffold"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "neuro-nn",
+    "skill-nn",
+    "time-crystal-nn"
+  ],
   "tools": [
     "nn_guide"
   ],

@@ -1,12 +1,22 @@
 {
   "name": "harmonic-llm",
   "version": "0.1.0",
-  "description": "Build minimal LLM inference engines for the frequency domain. Use when creating harmonic oscillator chatbots, implementi",
+  "description": "Construct harmonic large language models combining resonance architectures with transformer attention patterns.",
   "category": "code-generation",
   "tags": [
-    "inference"
+    "neural-network",
+    "inference",
+    "attention",
+    "generator"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "harmonic-ggml"
+  ],
+  "relatedPlugins": [
+    "harmonic-ggml",
+    "koboldcpp",
+    "dgen"
+  ],
   "tools": [
     "harmonic_llm_guide"
   ],

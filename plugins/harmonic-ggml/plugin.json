@@ -1,12 +1,22 @@
 {
   "name": "harmonic-ggml",
   "version": "0.1.0",
-  "description": "Build minimal GGML tensor libraries for the frequency domain. Use when implementing harmonic tensor operations, continuo",
+  "description": "Build harmonic neural networks on the GGML tensor library with resonance-based weight initialization.",
   "category": "code-generation",
   "tags": [
-    "inference"
+    "neural-network",
+    "inference",
+    "optimization",
+    "generator"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "ggml-spec"
+  ],
+  "relatedPlugins": [
+    "ggml-spec",
+    "harmonic-llm",
+    "harmonic-resonance-esn"
+  ],
   "tools": [
     "harmonic_ggml_guide"
   ],

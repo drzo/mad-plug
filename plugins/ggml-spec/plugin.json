@@ -1,12 +1,19 @@
 {
   "name": "ggml-spec",
   "version": "0.1.0",
-  "description": "Build minimal GGML tensor library implementations from formal specifications. Use when creating custom ML inference engi",
+  "description": "Reference and implement GGML tensor library specifications for quantized neural network model inference.",
   "category": "code-generation",
   "tags": [
-    "inference"
+    "neural-network",
+    "inference",
+    "optimization"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "harmonic-ggml",
+    "koboldcpp",
+    "llama-cpp-spec"
+  ],
   "tools": [
     "ggml_spec_guide"
   ],

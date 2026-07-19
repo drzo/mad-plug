@@ -1,14 +1,19 @@
 {
   "name": "npu",
   "version": "0.1.0",
-  "description": "Build and operate Neural Processing Unit virtual hardware abstractions for LLM integration. Use when modeling LLM infere",
+  "description": "Build Neural Processing Unit virtual hardware abstractions for modeling LLM inference pipelines and routing.",
   "category": "skill-engineering",
   "tags": [
-    "transform",
+    "inference",
     "cognitive",
-    "inference"
+    "neural-network"
   ],
   "dependencies": [],
+  "relatedPlugins": [
+    "sys-n",
+    "neuro-nn",
+    "llama-cpp-spec"
+  ],
   "tools": [
     "npu_guide"
   ],

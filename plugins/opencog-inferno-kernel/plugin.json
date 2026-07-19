@@ -1,16 +1,22 @@
 {
   "name": "opencog-inferno-kernel",
   "version": "0.1.0",
-  "description": "Build and accelerate distributed inference engines with the OpenCog-Inferno kernel. Use for implementing distributed AGI",
+  "description": "Integrate OpenCog AtomSpace with Inferno-OS kernels for distributed cognitive namespace operations.",
   "category": "pattern-recognition",
   "tags": [
-    "pattern",
-    "cognitive",
+    "opencog",
+    "inferno",
     "kernel",
-    "inference",
-    "distributed"
+    "cognitive"
   ],
-  "dependencies": [],
+  "dependencies": [
+    "cognitive-kernel"
+  ],
+  "relatedPlugins": [
+    "cognitive-kernel",
+    "clawcog",
+    "inferno-devcontainer"
+  ],
   "tools": [
     "opencog_inferno_kernel_guide"
   ],
